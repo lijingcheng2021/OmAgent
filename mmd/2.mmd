@@ -1,0 +1,22 @@
+sequenceDiagram
+    participant C as Client
+    participant TH as TaskHandler
+    participant W as Worker进程
+    participant CD as Conductor
+
+    C->>TH: 1. start_processes()
+    activate TH
+    
+    TH->>W: 2. 创建Worker进程
+    activate W
+    
+    loop 持续轮询
+        W->>CD: 3. poll_for_task()
+        CD-->>W: 4. 返回任务(如果有)
+        
+        alt 有任务时
+            W->>CD: 5. updateTask (心跳)
+            W->>W: 6. 处理任务
+            W->>CD: 7. 完成任务
+        end
+    end

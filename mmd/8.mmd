@@ -1,0 +1,16 @@
+User->>Client: 输入问题和图片
+Client->>Conductor: 1. 启动工作流
+Note over Conductor: 创建工作流实例<br/>step1_simpleVQA
+
+Conductor->>Worker1: 2. 分配第一个任务<br/>(InputInterface)
+Worker1->>Redis: 3. 存储图片到STM
+Worker1->>Conductor: 4. 任务完成，返回问题文本
+
+Conductor->>Worker2: 5. 分配第二个任务<br/>(SimpleVQA)
+Worker2->>Redis: 6. 从STM读取图片
+Worker2->>LLM: 7. 发送问题和图片
+LLM->>Worker2: 8. 返回答案
+Worker2->>Redis: 9. 将答案写入Stream
+
+Redis->>Client: 10. 推送答案
+Client->>User: 11. 显示答案

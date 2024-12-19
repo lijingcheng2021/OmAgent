@@ -43,6 +43,8 @@ class LegalAssistant(BaseWorker, BaseLLMBackend):
             ))
             
         # 添加当前用户问题
+        if user_instruction is None:
+            raise ValueError("user_instruction cannot be None")
         chat_message.append(Message(role="user", message_type='text', content=user_instruction))
         
         # 如果有图片,添加图片消息

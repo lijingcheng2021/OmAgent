@@ -1,0 +1,35 @@
+sequenceDiagram
+    participant App as 应用程序
+    participant Con as Container容器
+    participant Cfg as 配置文件
+    participant Srv as 各类服务
+
+    rect rgb(240, 240, 255)
+        Note over App,Srv: 初始化阶段
+        App->>Con: 1. 创建Container实例
+        App->>Con: 2. register_stm("RedisSTM")
+        App->>Con: 3. from_config('container.yaml')
+        Con->>Cfg: 4. 读取配置文件
+        Cfg-->>Con: 5. 返回配置信息
+    end
+
+    rect rgb(245, 245, 255)
+        Note over App,Srv: 服务初始化
+        Con->>Srv: 6a. 初始化Conductor客户端
+        Con->>Srv: 6b. 初始化Redis Stream
+        Con->>Srv: 6c. 初始化Redis STM
+        Con->>Srv: 6d. 初始化其他组件
+    end
+
+    rect rgb(240, 240, 255)
+        Note over App,Srv: 运行时依赖注入
+        App->>Con: 7. 请求服务实例
+        Con->>Con: 8. 检查是否已初始化
+        alt 服务未初始化
+            Con->>Srv: 9a. 创建服务实例
+            Srv-->>Con: 10a. 返回新实例
+        else 服务已存在
+            Con->>Con: 9b. 获取现有实例
+        end
+        Con-->>App: 11. 返回服务实例
+    end

@@ -1,0 +1,58 @@
+graph TB
+    subgraph Client层
+        CLI[DefaultClient]
+        APP[AppClient]
+        WEB[WebpageClient]
+    end
+
+    subgraph 工作流层
+        WF[ConductorWorkflow]
+        T1[Task1: InputInterface]
+        T2[Task2: SimpleVQA]
+        WF --> T1
+        T1 --> T2
+    end
+
+    subgraph 数据流层
+        RS[(Redis Stream)]
+        STM[(Redis STM)]
+    end
+
+    subgraph Worker层
+        II[InputInterface Worker]
+        VQA[SimpleVQA Worker]
+        LLM[OpenAI GPT]
+    end
+
+    %% 客户端到工作流的连接
+    CLI --> |启动工作流| WF
+    APP --> |启动工作流| WF
+    WEB --> |启动工作流| WF
+
+    %% 数据流向
+    CLI --> |写入用户输入| RS
+    RS --> |读取用户输入| II
+    II --> |存储图片缓存| STM
+    II --> |传递问题| VQA
+    VQA --> |读取图片| STM
+    VQA --> |发送请求| LLM
+    LLM --> |返回答案| VQA
+    VQA --> |输出结果| RS
+    RS --> |展示结果| CLI
+
+    %% 状态说明
+    classDef client fill:#f9f,stroke:#333,stroke-width:2px
+    classDef workflow fill:#bbf,stroke:#333,stroke-width:2px
+    classDef storage fill:#bfb,stroke:#333,stroke-width:2px
+    classDef worker fill:#fbb,stroke:#333,stroke-width:2px
+
+    class CLI,APP,WEB client
+    class WF,T1,T2 workflow
+    class RS,STM storage
+    class II,VQA,LLM worker
+
+    %% 添加说明
+    style CLI fill:#f9f,stroke:#333,stroke-width:2px
+    style RS fill:#bfb,stroke:#333,stroke-width:2px
+    style II fill:#fbb,stroke:#333,stroke-width:2px
+    style VQA fill:#fbb,stroke:#333,stroke-width:2px

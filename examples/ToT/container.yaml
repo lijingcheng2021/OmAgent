@@ -1,7 +1,7 @@
 conductor_config:
   name: Configuration
   base_url:
-    value: http://140.207.201.47:8080
+    value: http://10.8.21.200:8080
     description: The Conductor Server API endpoint
     env_var: CONDUCTOR_SERVER_URL
   auth_key:
@@ -24,7 +24,7 @@ connectors:
   redis_stream_client:
     name: RedisConnector
     host:
-      value: 140.207.201.47
+      value: localhost
       env_var: HOST
     port:
       value: 6379
@@ -41,7 +41,7 @@ connectors:
   redis_stm_client:
     name: RedisConnector
     host:
-      value: 140.207.201.47
+      value: localhost
       env_var: HOST
     port:
       value: 6379
@@ -56,29 +56,29 @@ connectors:
       value: 0
       env_var: DB
 components:
-  AppCallback:
-    name: AppCallback
-    bot_id:
-      value: ''
-      env_var: BOT_ID
-    start_time:
-      value: 2024-12-09_16:40:58
-      env_var: START_TIME
-    folder_name:
-      value: ./running_logs/2024-12-09_16:40:58
-      env_var: FOLDER_NAME
-  AppInput:
-    name: AppInput
   DefaultCallback:
     name: DefaultCallback
     bot_id:
       value: ''
       env_var: BOT_ID
     start_time:
-      value: 2024-12-09_16:40:58
+      value: 2024-12-07_23:33:34
       env_var: START_TIME
     folder_name:
-      value: ./running_logs/2024-12-09_16:40:58
+      value: ./running_logs/2024-12-07_23:33:34
+      env_var: FOLDER_NAME
+  AppInput:
+    name: AppInput
+  AppCallback:
+    name: AppCallback
+    bot_id:
+      value: ''
+      env_var: BOT_ID
+    start_time:
+      value: 2024-12-07_23:33:34
+      env_var: START_TIME
+    folder_name:
+      value: ./running_logs/2024-12-07_23:33:34
       env_var: FOLDER_NAME
   RedisSTM:
     name: RedisSTM

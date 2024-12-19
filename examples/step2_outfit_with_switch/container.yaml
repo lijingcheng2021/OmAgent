@@ -24,7 +24,7 @@ connectors:
   redis_stream_client:
     name: RedisConnector
     host:
-      value: 140.207.201.47
+      value: localhost
       env_var: HOST
     port:
       value: 6379
@@ -41,7 +41,7 @@ connectors:
   redis_stm_client:
     name: RedisConnector
     host:
-      value: 140.207.201.47
+      value: localhost
       env_var: HOST
     port:
       value: 6379
@@ -62,10 +62,10 @@ components:
       value: ''
       env_var: BOT_ID
     start_time:
-      value: 2024-12-09_16:40:58
+      value: 2024-12-19_11:08:35
       env_var: START_TIME
     folder_name:
-      value: ./running_logs/2024-12-09_16:40:58
+      value: ./running_logs/2024-12-19_11:08:35
       env_var: FOLDER_NAME
   AppInput:
     name: AppInput
@@ -75,10 +75,10 @@ components:
       value: ''
       env_var: BOT_ID
     start_time:
-      value: 2024-12-09_16:40:58
+      value: 2024-12-19_11:08:35
       env_var: START_TIME
     folder_name:
-      value: ./running_logs/2024-12-09_16:40:58
+      value: ./running_logs/2024-12-19_11:08:35
       env_var: FOLDER_NAME
   RedisSTM:
     name: RedisSTM

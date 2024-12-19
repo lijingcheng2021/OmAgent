@@ -1,0 +1,53 @@
+graph TB
+    subgraph Container容器
+        direction TB
+        Config[配置管理]
+        Registry[组件注册中心]
+        DI[依赖注入系统]
+    end
+
+    subgraph 核心服务
+        direction TB
+        Redis[(Redis服务)]
+        Conductor[Conductor服务]
+    end
+
+    subgraph 客户端层
+        direction TB
+        DC[DefaultClient]
+        AC[AppClient]
+    end
+
+    subgraph Worker系统
+        direction TB
+        W1[InputInterface Worker]
+        W2[SimpleVQA Worker]
+    end
+
+    %% Container内部关系
+    Config --> Registry
+    Registry --> DI
+
+    %% Container对外连接
+    Container容器 --> |配置连接| Redis
+    Container容器 --> |配置连接| Conductor
+    Container容器 --> |注册组件| Worker系统
+
+    %% 数据流向
+    DC --> |1.启动| Worker系统
+    W1 --> |2.存图片| Redis
+    W2 --> |3.读图片| Redis
+    Conductor --> |4.任务分配| Worker系统
+    Worker系统 --> |5.状态更新| Conductor
+    Redis --> |6.结果推送| DC
+
+    %% 样式定义
+    classDef container fill:#f9f,stroke:#333,stroke-width:2px
+    classDef service fill:#bbf,stroke:#333,stroke-width:2px
+    classDef client fill:#bfb,stroke:#333,stroke-width:2px
+    classDef worker fill:#fbb,stroke:#333,stroke-width:2px
+
+    class Config,Registry,DI container
+    class Redis,Conductor service
+    class DC,AC client
+    class W1,W2 worker

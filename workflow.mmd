@@ -1,0 +1,66 @@
+graph TB
+    %% 核心类结构
+    subgraph CoreClasses[核心类结构]
+        CW[ConductorWorkflow] --> |包含| ST[SimpleTask]
+        CW --> |使用| WEE[WorkflowExecutionEngine]
+        ST --> |继承| II[InputInterface]
+        ST --> |继承| VQAT[SimpleVQA]
+    end
+
+    %% 任务状态流转
+    subgraph TaskStates[任务状态]
+        TS1[PENDING] --> |开始执行| TS2[RUNNING]
+        TS2 --> |成功| TS3[COMPLETED]
+        TS2 --> |失败| TS4[FAILED]
+        TS4 -.-> |重试| TS1
+    end
+
+    %% 执行流程
+    subgraph ExecutionFlow[执行流程]
+        E1[创建工作流] --> E2[注册任务]
+        E2 --> E3[连接任务]
+        E3 --> E4[启动执行引擎]
+        E4 --> E5[执行任务链]
+    end
+
+    %% VQA处理流程
+    subgraph VQAProcess[VQA处理流程]
+        V1[用户输入] --> |InputInterface| V2[获取问题]
+        V2 --> |SimpleVQA| V3[VQA处理]
+        V3 --> V4[返回结果]
+    end
+
+    %% 数据流
+    subgraph DataFlow[数据流管理]
+        D1[TaskContext] --> |存储| D2[任务数据]
+        D1 --> |记录| D3[执行历史]
+        D1 --> |管理| D4[任务状态]
+    end
+
+    %% 错误处理
+    subgraph ErrorHandling[错误处理]
+        EH1[try] --> EH2[执行任务]
+        EH2 --> |成功| EH3[更新状态]
+        EH2 --> |失败| EH4[错误处理]
+        EH4 --> EH5[记录日志]
+    end
+
+    %% 连接关系
+    ExecutionFlow --> VQAProcess
+    VQAProcess --> DataFlow
+    TaskStates --> ErrorHandling
+
+    %% 样式定义
+    classDef coreClass fill:#f9f,stroke:#333
+    classDef stateClass fill:#bbf,stroke:#333
+    classDef execClass fill:#bfb,stroke:#333
+    classDef vqaClass fill:#fbf,stroke:#333
+    classDef dataClass fill:#fdb,stroke:#333
+    classDef errorClass fill:#fdd,stroke:#333
+
+    class CoreClasses coreClass
+    class TaskStates stateClass
+    class ExecutionFlow execClass
+    class VQAProcess vqaClass
+    class DataFlow dataClass
+    class ErrorHandling errorClass

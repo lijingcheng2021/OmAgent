@@ -1,0 +1,59 @@
+graph TB
+    subgraph Container工具箱
+        direction TB
+        Config[配置管理]
+        Registry[组件注册]
+        DI[依赖注入]
+    end
+
+    subgraph Conductor工作流系统
+        direction TB
+        CW[ConductorWorkflow]
+        WEE[工作流执行引擎]
+        T1[Task1: InputInterface]
+        T2[Task2: SimpleVQA]
+        CW --> |创建| T1
+        CW --> |创建| T2
+        T1 --> |输出流向| T2
+        WEE --> |执行| T1
+        WEE --> |执行| T2
+    end
+
+    subgraph 外部服务
+        direction TB
+        Redis[(Redis服务)]
+        ConductorServer[Conductor服务器]
+        GPT[GPT-4V]
+    end
+
+    subgraph 客户端
+        direction TB
+        CLI[命令行客户端]
+        APP[APP客户端]
+    end
+
+    %% Container的连接
+    Container工具箱 --> |提供配置| Redis
+    Container工具箱 --> |提供配置| ConductorServer
+    Container工具箱 --> |注册组件| T1
+    Container工具箱 --> |注册组件| T2
+
+    %% 工作流的执行
+    CLI --> |启动| CW
+    APP --> |启动| CW
+    CW --> |提交| ConductorServer
+    ConductorServer --> |分配任务| WEE
+    T1 --> |存储数据| Redis
+    T2 --> |读取数据| Redis
+    T2 --> |调用| GPT
+
+    %% 样式定义
+    classDef container fill:#f9f,stroke:#333,stroke-width:2px
+    classDef workflow fill:#bbf,stroke:#333,stroke-width:2px
+    classDef service fill:#bfb,stroke:#333,stroke-width:2px
+    classDef client fill:#fbb,stroke:#333,stroke-width:2px
+
+    class Config,Registry,DI container
+    class CW,WEE,T1,T2 workflow
+    class Redis,ConductorServer,GPT service
+    class CLI,APP client

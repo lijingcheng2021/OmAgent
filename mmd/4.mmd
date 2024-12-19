@@ -1,0 +1,23 @@
+sequenceDiagram
+    participant W as Worker进程
+    participant CD as Conductor
+    participant L as Logger
+
+    rect rgb(240, 240, 255)
+        W->>W: 1. 尝试执行任务
+        
+        alt 执行成功
+            W->>CD: 2a. 更新任务状态(COMPLETED)
+            CD-->>W: 3a. 确认状态更新
+        else 执行失败
+            W->>L: 2b. 记录错误日志
+            W->>CD: 3b. 更新任务状态(FAILED)
+            CD-->>W: 4b. 确认状态更新
+            
+            rect rgb(245, 245, 255)
+                Note over W,CD: 重试机制
+                W->>CD: 5b. 请求重试任务
+                CD-->>W: 6b. 分配新的任务实例
+            end
+        end
+    end
