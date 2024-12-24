@@ -1,0 +1,72 @@
+graph TB
+    A[run_cli.py] --> B[Container System]
+    A --> C[Workflow System]
+    A --> D[Client System]
+    
+    subgraph B[1. Container System]
+        direction TB
+        B1[container.py] --> BD1[1. Debug: STM初始化]
+        BD1 --> BDP1[1.1 检查Redis连接]
+        BD1 --> BDP2[1.2 验证状态存储]
+        
+        B1 --> BD2[2. Debug: 配置加载]
+        BD2 --> BDP3[2.1 YAML解析]
+        BD2 --> BDP4[2.2 环境变量注入]
+        
+        B2[registry.py] --> BD3[3. Debug: 模块注册]
+        BD3 --> BDP5[3.1 动态导入检查]
+        BD3 --> BDP6[3.2 注册表验证]
+        
+        B3[build.py] --> BD4[4. Debug: 依赖注入]
+        BD4 --> BDP7[4.1 组件初始化]
+        BD4 --> BDP8[4.2 依赖关系检查]
+    end
+    
+    subgraph C[2. Workflow System]
+        direction TB
+        C1[conductor_workflow.py] --> CD1[5. Debug: 工作流初始化]
+        CD1 --> CDP1[5.1 配置验证]
+        CD1 --> CDP2[5.2 组件装配]
+        
+        C1 --> CD2[6. Debug: 任务编排]
+        CD2 --> CDP3[6.1 任务链构建]
+        CD2 --> CDP4[6.2 数据流定义]
+        
+        C2[simple_task.py] --> CD3[7. Debug: 任务执行]
+        CD3 --> CDP5[7.1 执行上下文]
+        CD3 --> CDP6[7.2 结果验证]
+        
+        C3[base.py] --> CD4[8. Debug: 状态管理]
+        CD4 --> CDP7[8.1 状态转换]
+        CD4 --> CDP8[8.2 数据持久化]
+    end
+    
+    subgraph D[3. Client System]
+        direction TB
+        D1[client.py] --> DD1[9. Debug: 交互循环]
+        DD1 --> DDP1[9.1 输入捕获]
+        DD1 --> DDP2[9.2 响应处理]
+        
+        D1 --> DD2[10. Debug: 输入处理]
+        DD2 --> DDP3[10.1 数据验证]
+        DD2 --> DDP4[10.2 格式转换]
+        
+        D2[base.py] --> DD3[11. Debug: 异常处理]
+        DD3 --> DDP5[11.1 错误捕获]
+        DD3 --> DDP6[11.2 恢复机制]
+    end
+    
+    subgraph E[4. Agent Modules]
+        direction TB
+        E1[input_interface] --> ED1[12. Debug: 输入验证]
+        ED1 --> EDP1[12.1 格式检查]
+        ED1 --> EDP2[12.2 类型转换]
+        
+        E2[simple_vqa] --> ED2[13. Debug: VQA处理]
+        ED2 --> EDP3[13.1 模型调用]
+        ED2 --> EDP4[13.2 结果处理]
+    end
+    
+    B --> E
+    C --> E
+    D --> E
