@@ -8,7 +8,6 @@ from omagent_core.clients.devices.cli.client import DefaultClient
 from omagent_core.utils.logger import logging
 from agent.input_interface.input_interface import InputInterface
 from omagent_core.advanced_components.workflow.react.workflow import ReactWorkflow
-from omagent_core.engine.workflow.task.switch_task import SwitchTask
 
 logging.init_logger("omagent", "omagent", level="INFO")
 
