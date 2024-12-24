@@ -9,8 +9,8 @@ from pydantic import Field
 CURRENT_PATH = Path(__file__).parents[0]
 
 @registry.register_worker()
-class QA(BaseLLMBackend, BaseWorker):
-    """QA worker that uses GPT model to generate responses"""
+class Think(BaseLLMBackend, BaseWorker):
+    """Think worker that implements ReAct (Reasoning and Acting) approach"""
     
     prompts: List[PromptTemplate] = Field(
         default=[
@@ -26,30 +26,30 @@ class QA(BaseLLMBackend, BaseWorker):
     )
 
     def _run(self, query: str, *args, **kwargs):
-        """Process the query and generate response using GPT model
+        """Process the query using ReAct approach with Thought, Action, Observation steps
         
         Args:
             query: The user's input question
         Returns:
-            dict: Contains the model's response
+            dict: Contains the model's response and reasoning process
         """
         self.callback.info(
             agent_id=self.workflow_instance_id, 
-            progress='Answering', 
+            progress='Thinking', 
             message=f'Processing query: {query}'
         )
         
-        # Get streaming response from GPT model
+        # Get response with reasoning steps
         response = self.simple_infer(query=query)
         
-        # Initialize output
-        output = 'Answer: '
+        # Initialize output to capture the full reasoning process
+        output = ''
         self.callback.send_incomplete(
             agent_id=self.workflow_instance_id, 
-            msg='Answer: '
+            msg=''
         )
         
-        # Process streaming response
+        # Process streaming response to show reasoning steps
         for chunk in response:
             if chunk.choices[0].delta.content is not None:
                 content = chunk.choices[0].delta.content

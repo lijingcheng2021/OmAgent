@@ -1,4 +1,4 @@
-name: QA
+name: Think
 llm: ${sub|text_res_stream}
 output_parser: 
   name: StrParser 
