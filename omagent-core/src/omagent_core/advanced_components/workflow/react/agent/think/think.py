@@ -25,44 +25,65 @@ class Think(BaseLLMBackend, BaseWorker):
         ]
     )
 
-    def _run(self, query: str, *args, **kwargs):
-        """Process the query using ReAct approach with Thought, Action, Observation steps
-        
-        Args:
-            query: The user's input question
-        Returns:
-            dict: Contains the model's response and reasoning process
-        """
+    def _run(self, query: str, context: str = "", next_step: str = "Thought", *args, **kwargs):
+        """Process the query using ReAct approach"""
+        # 记录输入信息
         self.callback.info(
             agent_id=self.workflow_instance_id, 
-            progress='Thinking', 
-            message=f'Processing query: {query}'
+            progress='Think Input', 
+            message=f'Query: {query}\nContext: {context}\nNext Step: {next_step}'
         )
         
-        # Get response with reasoning steps
-        response = self.simple_infer(query=query)
+        # 构建 prompt
+        step_number = self._get_step_number(context)
+        full_prompt = f"{context}\n{next_step} {step_number}:" if context else f"{query}\n{next_step} {step_number}:"
         
-        # Initialize output to capture the full reasoning process
-        output = ''
-        self.callback.send_incomplete(
+        # 添加动态的步骤编号提示
+        full_prompt += f"\nNote: Only output Thought {step_number}."
+        
+        self.callback.info(
             agent_id=self.workflow_instance_id, 
-            msg=''
+            progress='Think Prompt', 
+            message=f'Full Prompt: {full_prompt}'
         )
         
-        # Process streaming response to show reasoning steps
+        # Get response
+        response = self.simple_infer(query=query, context=full_prompt)
+        output = ''
         for chunk in response:
             if chunk.choices[0].delta.content is not None:
                 content = chunk.choices[0].delta.content
-                self.callback.send_incomplete(
-                    agent_id=self.workflow_instance_id, 
-                    msg=content
-                )
                 output += content
-            else:
-                self.callback.send_block(
-                    agent_id=self.workflow_instance_id, 
-                    msg=''
-                )
-                break
                 
-        return {'response': output} 
+        # 记录输出信息
+        self.callback.info(
+            agent_id=self.workflow_instance_id, 
+            progress='Think Output', 
+            message=f'Response: {output}'
+        )
+        
+        # 返回时移除临时提示说明
+        return {
+            'response': output,
+            'context': f"{context}\n{next_step} {step_number}: {output}" if context else f"{query}\n{next_step} {step_number}: {output}"
+        }
+        
+    def _get_step_number(self, context: str) -> int:
+        """Get the next step number based on context"""
+        if not context:
+            return 1
+            
+        # 按行分割上下文
+        lines = context.split('\n')
+        step_count = 0
+        
+        # 遍历每一行，检查是否是步骤标记
+        for line in lines:
+            line = line.strip()
+            # 检查行是否以步骤标记开始（标记词 + 空格 + 数字）
+            if any(line.startswith(f"{marker} ") and any(c.isdigit() for c in line)
+                  for marker in ['Thought', 'Action', 'Observation']):
+                step_count += 1
+                
+        # 返回下一个步骤号
+        return (step_count // 3) + 1  # 每组三个步骤（Thought/Action/Observation）共享同一个编号 

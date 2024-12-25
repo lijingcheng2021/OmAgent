@@ -14,6 +14,9 @@ logging.init_logger("omagent", "omagent", level="INFO")
 # Set current working directory path
 CURRENT_PATH = Path(__file__).parents[0]
 
+# Import registered modules
+registry.import_module(CURRENT_PATH.joinpath('agent'))
+
 # Load container configuration
 container.register_stm("RedisSTM")
 container.from_config(CURRENT_PATH.joinpath('container.yaml'))

@@ -1,4 +1,4 @@
-name: Action  # 从 Analyzer 改为 Action
+name: Action
 llm: ${sub|text_res}
 output_parser: 
   name: StrParser 

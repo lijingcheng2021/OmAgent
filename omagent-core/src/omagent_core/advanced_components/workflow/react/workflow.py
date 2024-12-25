@@ -1,8 +1,9 @@
 from omagent_core.engine.workflow.conductor_workflow import ConductorWorkflow
 from omagent_core.engine.workflow.task.simple_task import simple_task
 from omagent_core.engine.workflow.task.do_while_task import DoWhileTask
-from .agent.analyzer.analyzer import Analyzer
+from .agent.action.action import Action
 from .agent.think.think import Think
+from .agent.wiki_search.wiki_search import WikiSearch
 
 class ReactWorkflow(ConductorWorkflow):
     def __init__(self):
@@ -18,24 +19,39 @@ class ReactWorkflow(ConductorWorkflow):
         self.think_task = simple_task(
             task_def_name=Think,
             task_reference_name='think',
-            inputs={'query': self.query}
-        )
-        
-        # Analyzer task
-        self.analyzer_task = simple_task(
-            task_def_name=Analyzer,
-            task_reference_name='analyzer',
             inputs={
                 'query': self.query,
-                'response': self.think_task.output('response')
+                'context': '${wiki_search.output.context}',
+                'next_step': 'Thought'
             }
         )
         
-        # Do-While loop that continues until we get a reasonable answer
+        # Action task
+        self.action_task = simple_task(
+            task_def_name=Action,
+            task_reference_name='action',
+            inputs={
+                'query': self.query,
+                'context': self.think_task.output('context'),
+                'next_step': 'Action'
+            }
+        )
+        
+        # Wiki Search task
+        self.wiki_search_task = simple_task(
+            task_def_name=WikiSearch,
+            task_reference_name='wiki_search',
+            inputs={
+                'action_output': self.action_task.output('output'),
+                'context': self.action_task.output('context')
+            }
+        )
+        
+        # Do-While loop
         self.loop_task = DoWhileTask(
-            task_ref_name='qa_loop',
-            tasks=[self.think_task, self.analyzer_task],
-            termination_condition='if ($.analyzer["analysis"] == "1"){true;} else {false;}'
+            task_ref_name='react_loop',
+            tasks=[self.think_task, self.action_task, self.wiki_search_task],
+            termination_condition='if ($.action.action_type == "Finish"){false;} else {true;}'
         )
         
     def _configure_workflow(self):
@@ -43,5 +59,7 @@ class ReactWorkflow(ConductorWorkflow):
         self >> self.loop_task
         
         # Set workflow outputs
-        self.qa_result = self.think_task.output('response')
-        self.analysis_result = self.analyzer_task.output('analysis')
+        self.output_fields = {
+            'final_answer': '${action.output.final_answer}',
+            'context': '${action.output.context}'
+        }
