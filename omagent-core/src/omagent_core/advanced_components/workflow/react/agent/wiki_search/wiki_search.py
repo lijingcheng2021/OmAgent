@@ -3,10 +3,13 @@ from omagent_core.engine.worker.base import BaseWorker
 from omagent_core.utils.registry import registry
 from omagent_core.utils.logger import logging
 from langchain.agents.react.base import DocstoreExplorer
-from langchain.docstore import Wikipedia
+from langchain_community.docstore.wikipedia import Wikipedia
+from pydantic import Field
 
 @registry.register_worker()
 class WikiSearch(BaseWorker):
+    tool_manager: dict = Field(...)  # 改为 dict 类型
+    
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.docstore = DocstoreExplorer(Wikipedia())

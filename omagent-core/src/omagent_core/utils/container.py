@@ -202,8 +202,19 @@ class Container:
                     config=config,
                     overwrite=True,
                 )
+                
+        # 处理其他配置节点
+        for key, value in config_data.items():
+            if key not in ["conductor_config", "connectors", "components"]:
+                setattr(self, key, value)
 
         self.check_connection()
+        
+    def __getattr__(self, name: str):
+        """处理对未知属性的访问"""
+        if name in self._custom_configs:
+            return self._custom_configs[name]
+        raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{name}'")
 
     def check_connection(self):
         for name, connector in self._connectors.items():

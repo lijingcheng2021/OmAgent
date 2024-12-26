@@ -1,4 +1,0 @@
-name: Action
-llm: ${sub|text_res}
-output_parser: 
-  name: StrParser 

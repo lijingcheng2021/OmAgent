@@ -30,7 +30,7 @@ class Think(BaseLLMBackend, BaseWorker):
         # 从STM获取context
         context = self.stm(self.workflow_instance_id).get('context', '')
         
-        # 记录输入信息
+        # 记录输出信息
         self.callback.info(
             agent_id=self.workflow_instance_id, 
             progress='Think Input', 
@@ -70,7 +70,8 @@ class Think(BaseLLMBackend, BaseWorker):
         self.stm(self.workflow_instance_id).update({'context': new_context})
         
         return {
-            'response': output
+            'response': output,
+            'step_number': step_number
         }
         
     def _get_step_number(self, context: str) -> int:
