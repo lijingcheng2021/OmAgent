@@ -22,7 +22,7 @@ conductor_config:
     env_var: DEBUG
 
 react_workflow:
-  max_turns: 3
+  max_turns: 5
 
 connectors:
   redis_stream_client:
@@ -57,33 +57,35 @@ connectors:
       value: null
       env_var: USERNAME
     db:
-      value: 1
+      value: 0
       env_var: DB
-
 components:
-  RedisSTM:
-    name: RedisSTM
-  DefaultCallback:
-    name: DefaultCallback
-    bot_id:
-      value: ''
-      env_var: BOT_ID
-    start_time:
-      value: 2024-11-10_20:51:13
-      env_var: START_TIME
-    folder_name:
-      value: ./running_logs/2024-11-10_20:51:13
-      env_var: FOLDER_NAME
-  AppInput:
-    name: AppInput
   AppCallback:
     name: AppCallback
     bot_id:
       value: ''
       env_var: BOT_ID
     start_time:
-      value: 2024-11-10_20:51:13
+      value: 2024-12-23_23:20:06
       env_var: START_TIME
     folder_name:
-      value: ./running_logs/2024-11-10_20:51:13
+      value: ./running_logs/2024-12-23_23:20:06
       env_var: FOLDER_NAME
+  AppInput:
+    name: AppInput
+  DefaultCallback:
+    name: DefaultCallback
+    bot_id:
+      value: ''
+      env_var: BOT_ID
+    start_time:
+      value: 2024-12-23_23:20:06
+      env_var: START_TIME
+    folder_name:
+      value: ./running_logs/2024-12-23_23:20:06
+      env_var: FOLDER_NAME
+    incomplete_flag:
+      value: false
+      env_var: INCOMPLETE_FLAG
+  RedisSTM:
+    name: RedisSTM
