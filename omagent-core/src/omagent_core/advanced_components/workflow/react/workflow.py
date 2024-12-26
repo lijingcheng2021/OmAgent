@@ -11,6 +11,13 @@ class ReactWorkflow(ConductorWorkflow):
     def __init__(self):
         super().__init__(name='react')
         
+        # Initialize state machine with configuration
+        self.stm = {
+            'config': {
+                'max_turns': container.react_workflow['max_turns']
+            }
+        }
+        
     def set_input(self, query: str):
         self.query = query
         self._configure_tasks()
@@ -49,19 +56,25 @@ class ReactWorkflow(ConductorWorkflow):
             }
         )
         
-        # Do-While loop
+        # Do-While loop with max_turns from config
         self.loop_task = DoWhileTask(
             task_ref_name='react_loop',
             tasks=[self.think_task, self.action_task, self.wiki_search_task],
-            termination_condition='if ($.action.action_type == "Finish"){false;} else {true;}'
+            termination_condition=f'''
+                if ($.action.action_type == "Finish" || $.think.step_number > {self.stm['config']['max_turns']}) {{
+                    false;
+                }} else {{
+                    true;
+                }}
+            '''
         )
         
     def _configure_workflow(self):
         # Configure workflow execution flow
         self >> self.loop_task
         
-        # Set workflow outputs
+        # Set workflow outputs based on Action task's output format
         self.output_fields = {
-            'final_answer': '${action.output.final_answer}',
-            'context': '${action.output.context}'
+            'output': '${action.output}',
+            'action_type': '${action.action_type}'
         }
