@@ -4,6 +4,8 @@ from omagent_core.engine.workflow.task.do_while_task import DoWhileTask
 from .agent.action.action import Action
 from .agent.think.think import Think
 from .agent.wiki_search.wiki_search import WikiSearch
+from omagent_core.utils.logger import logging
+from omagent_core.utils.container import container
 
 class ReactWorkflow(ConductorWorkflow):
     def __init__(self):
@@ -17,12 +19,12 @@ class ReactWorkflow(ConductorWorkflow):
     def _configure_tasks(self):
         # Think task
         self.think_task = simple_task(
-            task_def_name=Think,
+            task_def_name=Think,                
             task_reference_name='think',
             inputs={
                 'query': self.query,
-                'context': '${wiki_search.output.context}',
-                'next_step': 'Thought'
+                'next_step': 'Thought',
+                'workflow_id': '${workflow.workflowId}'
             }
         )
         
@@ -32,8 +34,8 @@ class ReactWorkflow(ConductorWorkflow):
             task_reference_name='action',
             inputs={
                 'query': self.query,
-                'context': self.think_task.output('context'),
-                'next_step': 'Action'
+                'next_step': 'Action',
+                'workflow_id': '${workflow.workflowId}'
             }
         )
         
@@ -43,7 +45,7 @@ class ReactWorkflow(ConductorWorkflow):
             task_reference_name='wiki_search',
             inputs={
                 'action_output': self.action_task.output('output'),
-                'context': self.action_task.output('context')
+                'workflow_id': '${workflow.workflowId}'
             }
         )
         

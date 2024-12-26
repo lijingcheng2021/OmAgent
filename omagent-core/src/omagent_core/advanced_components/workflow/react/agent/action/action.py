@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import List
+from typing import List, Optional, Dict, Any
 from omagent_core.models.llms.base import BaseLLMBackend
 from omagent_core.engine.worker.base import BaseWorker
 from omagent_core.models.llms.prompt import PromptTemplate
@@ -29,8 +29,11 @@ class Action(BaseLLMBackend, BaseWorker):
         super().__init__(*args, **kwargs)
         self._step_number = 1  # 使用实例变量来跟踪步骤
 
-    def _run(self, query: str, context: str, next_step: str = "Action", *args, **kwargs):
+    def _run(self, query: str, next_step: str = "Action", *args, **kwargs):
         """Determine the next action based on context"""
+        # 从STM获取context
+        context = self.stm(self.workflow_instance_id).get('context', '')
+        
         self.callback.info(
             agent_id=self.workflow_instance_id, 
             progress='Acting', 
@@ -73,33 +76,25 @@ class Action(BaseLLMBackend, BaseWorker):
             message=f'Response: {response}\nAction Type: {action_type}'
         )
         
-        # 如果是完成动作，直接返回结果
+        # 更新context
+        new_context = f"{context}\n{next_step} {step_number}: {response}"
+        self.stm(self.workflow_instance_id).update({'context': new_context})
+        
+        # 如果是完成动作
         if action_type == "Finish":
-            # 提取最终答案
             answer = self._extract_finish_answer(response)
             return {
                 'action_type': action_type,
                 'step_number': step_number,
                 'output': answer,
-                'context': f"{context}\n{next_step} {step_number}: {response}",
                 'final_answer': answer
             }
             
-        result = {
+        return {
             'action_type': action_type,
             'step_number': step_number,
-            'output': response,
-            'context': f"{context}\n{next_step} {step_number}: {response}"
+            'output': response
         }
-        
-        # 添加调试日志
-        self.callback.info(
-            agent_id=self.workflow_instance_id,
-            progress='Action Result',
-            message=f'Returning result: {result}'
-        )
-        
-        return result
         
     def _parse_action_type(self, response: str) -> str:
         """Parse the action type from response"""

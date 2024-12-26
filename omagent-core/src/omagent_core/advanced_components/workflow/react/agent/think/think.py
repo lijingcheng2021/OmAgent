@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import List
+from typing import List, Any
 from omagent_core.models.llms.base import BaseLLMBackend
 from omagent_core.engine.worker.base import BaseWorker
 from omagent_core.models.llms.prompt import PromptTemplate
@@ -25,8 +25,11 @@ class Think(BaseLLMBackend, BaseWorker):
         ]
     )
 
-    def _run(self, query: str, context: str = "", next_step: str = "Thought", *args, **kwargs):
+    def _run(self, query: str, next_step: str = "Thought", *args, **kwargs):
         """Process the query using ReAct approach"""
+        # 从STM获取context
+        context = self.stm(self.workflow_instance_id).get('context', '')
+        
         # 记录输入信息
         self.callback.info(
             agent_id=self.workflow_instance_id, 
@@ -62,10 +65,12 @@ class Think(BaseLLMBackend, BaseWorker):
             message=f'Response: {output}'
         )
         
-        # 返回时移除临时提示说明
+        # 更新context并存入STM
+        new_context = f"{context}\n{next_step} {step_number}: {output}" if context else f"{query}\n{next_step} {step_number}: {output}"
+        self.stm(self.workflow_instance_id).update({'context': new_context})
+        
         return {
-            'response': output,
-            'context': f"{context}\n{next_step} {step_number}: {output}" if context else f"{query}\n{next_step} {step_number}: {output}"
+            'response': output
         }
         
     def _get_step_number(self, context: str) -> int:
