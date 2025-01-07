@@ -1,0 +1,2 @@
+react_workflow:
+  max_turns: 15  # 设置最大轮数 
