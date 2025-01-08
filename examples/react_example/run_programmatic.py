@@ -1,6 +1,3 @@
-import os
-import math
-
 from omagent_core.utils.container import container
 from omagent_core.engine.workflow.conductor_workflow import ConductorWorkflow
 from pathlib import Path
@@ -10,24 +7,22 @@ from omagent_core.utils.logger import logging
 from omagent_core.advanced_components.workflow.react.workflow import ReactWorkflow
 import json
 
-
-
 logging.init_logger("omagent", "omagent", level="INFO")
 
-# 设置当前工作目录路径
+# Set current working directory path
 CURRENT_PATH = Path(__file__).parents[0]
 
-# 导入注册的模块
+# Import registered modules
 registry.import_module(CURRENT_PATH.joinpath('agent'))
 
-# 加载 container 配置从 YAML 文件
+# Load container configuration from YAML file
 container.register_stm("RedisSTM")
 container.from_config(CURRENT_PATH.joinpath('container.yaml'))
 
-# 初始化工作流
+# Initialize workflow
 workflow = ConductorWorkflow(name='react_basic_workflow_example')
 
-# 配置 React Basic 工作流
+# Configure React Basic workflow
 react_workflow = ReactWorkflow()
 react_workflow.set_input(
     query=workflow.input('query'),
@@ -36,23 +31,19 @@ react_workflow.set_input(
     example=workflow.input('example')
 )
 
-
-# 配置工作流执行流程
+# Configure workflow execution flow
 workflow >> react_workflow 
 
-# 注册工作流
+# Register workflow
 workflow.register(overwrite=True)
 
-
-
-
-# 初始化 programmatic client
+# Initialize programmatic client
 config_path = CURRENT_PATH.joinpath('configs')
 programmatic_client = ProgrammaticClient(
     processor=workflow,
     config_path=config_path,
-    workers=[]  # React workflow 不需要额外的 workers
-    )
+    workers=[]  # No additional workers needed for React workflow
+)
 
 example = """Question: What is the elevation range for the area that the eastern sector of the Colorado orogeny extends into?
 Thought 1: I need to search Colorado orogeny, find the area that the eastern sector of the Colorado orogeny extends into, then find the elevation range of the area.
@@ -78,54 +69,12 @@ Thought 2: The paragraph does not tell who Milhouse is named after, maybe I can 
 Action 2: Lookup[named after]
 Observation 2: (Result 1 / 1) Milhouse was named after U.S. president Richard Nixon, whose middle name was Milhous.
 Thought 3: Milhouse was named after U.S. president Richard Nixon, so the answer is Richard Nixon.
-Action 3: Finish[Richard Nixon]
+Action 3: Finish[Richard Nixon]"""
 
-Question: Which documentary is about Finnish rock groups, Adam Clayton Powell or The Saimaa Gesture?
-Thought 1: I need to search Adam Clayton Powell and The Saimaa Gesture, and find which documentary is about Finnish rock groups.
-Action 1: Search[Adam Clayton Powell]
-Observation 1: Could not find [Adam Clayton Powell]. Similar: ['Adam Clayton Powell III', 'Seventh Avenue (Manhattan)', 'Adam Clayton Powell Jr. State Office Building', 'Isabel Washington Powell', 'Adam Powell', 'Adam Clayton Powell (film)', 'Giancarlo Esposito'].
-Thought 2: To find the documentary, I can search Adam Clayton Powell (film).
-Action 2: Search[Adam Clayton Powell (film)]
-Observation 2: Adam Clayton Powell is a 1989 American documentary film directed by Richard Kilberg.
-The film is about the rise and fall of influential African-American politician Adam Clayton Powell Jr. It was later aired as part of the PBS series The American Experience.
-Thought 3: Adam Clayton Powell (film) is a documentary about an African-American politician, not Finnish rock groups. So the documentary about Finnish rock groups must instead be The Saimaa Gesture.
-Action 3: Finish[The Saimaa Gesture]
-
-Question: What profession does Nicholas Ray and Elia Kazan have in common?
-Thought 1: I need to search Nicholas Ray and Elia Kazan, find their professions, then find the profession they have in common.
-Action 1: Search[Nicholas Ray]
-Observation 1: Nicholas Ray (born Raymond Nicholas Kienzle Jr., August 7, 1911 – June 16, 1979) was an American film director, screenwriter, and actor best known for the 1955 film Rebel Without a Cause.
-Thought 2: Professions of Nicholas Ray are director, screenwriter, and actor. I need to search Elia Kazan next and find his professions.
-Action 2: Search[Elia Kazan]
-Observation 2: Elia Kazan was an American film and theatre director, producer, screenwriter and actor.
-Thought 3: Professions of Elia Kazan are director, producer, screenwriter, and actor. So profession Nicholas Ray and Elia Kazan have in common is director, screenwriter, and actor.
-Action 3: Finish[director, screenwriter, actor]
-
-Question: Which magazine was started first Arthur's Magazine or First for Women?
-Thought 1: I need to search Arthur's Magazine and First for Women, and find which was started first.
-Action 1: Search[Arthur's Magazine]
-Observation 1: Arthur's Magazine (1844–1846) was an American literary periodical published in Philadelphia in the 19th century.
-Thought 2: Arthur's Magazine was started in 1844. I need to search First for Women next.
-Action 2: Search[First for Women]
-Observation 2: First for Women is a woman's magazine published by Bauer Media Group in the USA. The magazine was started in 1989.
-Thought 3: First for Women was started in 1989. 1844 (Arthur's Magazine) < 1989 (First for Women), so Arthur's Magazine was started first.
-Action 3: Finish[Arthur's Magazine]
-
-Question: Were Pavel Urysohn and Leonid Levin known for the same type of work?
-Thought 1: I need to search Pavel Urysohn and Leonid Levin, find their types of work, then find if they are the same.
-Action 1: Search[Pavel Urysohn]
-Observation 1: Pavel Samuilovich Urysohn (February 3, 1898 – August 17, 1924) was a Soviet mathematician who is best known for his contributions in dimension theory.
-Thought 2: Pavel Urysohn is a mathematician. I need to search Leonid Levin next and find its type of work.
-Action 2: Search[Leonid Levin]
-Observation 2: Leonid Anatolievich Levin is a Soviet-American mathematician and computer scientist.
-Thought 3: Leonid Levin is a mathematician and computer scientist. So Pavel Urysohn and Leonid Levin have the same type of work.
-Action 3: Finish[yes]"""
-
-    
-    # 准备输入数据
+# Prepare input data
 workflow_input_list = [
     {
-        "query": "雷锋的出生日期", 
+        "query": "When was Albert Einstein born?", 
         "id": "21", 
         "max_turns": 5,
         "example": example

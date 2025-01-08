@@ -4,8 +4,6 @@ from omagent_core.engine.workflow.task.do_while_task import DoWhileTask
 from .agent.think_action.think_action import ThinkAction
 from .agent.wiki_search.wiki_search import WikiSearch
 from .agent.react_output.react_output import ReactOutput
-from omagent_core.utils.logger import logging
-from omagent_core.utils.container import container
 
 class ReactWorkflow(ConductorWorkflow):
     def __init__(self):
@@ -47,11 +45,11 @@ class ReactWorkflow(ConductorWorkflow):
             inputs={'max_turns': self.max_turns},
             termination_condition=f'''
                 if ($.think_action.is_final == true) {{
-                    false;  // 如果是 Finish 动作，停止循环
+                    false;  // Stop loop if it's a Finish action
                 }} else if ($.think_action.step_number > $.max_turns) {{
-                    false;  // 如果超过最大轮数，停止循环
+                    false;  // Stop loop if exceeded max turns
                 }} else {{
-                    true;   // 否则继续循环
+                    true;   // Continue loop otherwise
                 }}
             '''
         )
@@ -67,5 +65,5 @@ class ReactWorkflow(ConductorWorkflow):
         )
         
     def _configure_workflow(self):
-        # 配置工作流执行顺序
+        # Configure workflow execution sequence
         self >> self.loop_task >> self.react_output_task 

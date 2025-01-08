@@ -1,4 +1,3 @@
-from pathlib import Path
 from omagent_core.engine.worker.base import BaseWorker
 from omagent_core.utils.registry import registry
 from omagent_core.utils.logger import logging
@@ -10,7 +9,7 @@ from pydantic import Field
 class WikiSearch(BaseWorker):
     """Wiki Search worker for React workflow"""
     
-    tool_manager: dict = Field(...)  # 改为 dict 类型
+    tool_manager: dict = Field(...)  # Changed to dict type
     
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -19,7 +18,7 @@ class WikiSearch(BaseWorker):
     def _run(self, action_output: str, *args, **kwargs):
         """Execute search or lookup based on action output"""
         try:
-            # 从STM获取context和其他状态
+            # Get context and other states from STM
             state = self.stm(self.workflow_instance_id)
             context = state.get('context', '')
             step_number = self._get_step_number(context)
@@ -31,23 +30,23 @@ class WikiSearch(BaseWorker):
             else:
                 result = action_output
                 
-            # 记录观察结果
+            # Record observation result
             self.callback.info(
                 agent_id=self.workflow_instance_id,
                 progress='Observation',
                 message=f'Step {step_number}: {result}'
             )
                 
-            # 更新context（只在STM中保存，不在响应中返回）
+            # Update context (only save in STM, not return in response)
             new_context = f"{context}\nObservation {step_number}: {result}"
             
-            # 更新状态，包括 context、step_number
+            # Update states including context and step_number
             state.update({
                 'context': new_context,
-                'step_number': step_number + 1  # 在一轮对话结束时更新步骤号
+                'step_number': step_number + 1  # Update step number at the end of a round
             })
             
-            # 返回结果，包含所有必要的信息
+            # Return result with all necessary information
             return {
                 'output': result
             }
@@ -67,7 +66,7 @@ class WikiSearch(BaseWorker):
             if result:
                 result_text = result.strip('\n').strip().replace('\n', '')
                 
-                # 更新状态
+                # Update state
                 self.stm(self.workflow_instance_id).update({
                     'current_document': {'content': result},
                     'lookup_str': '',
@@ -87,7 +86,7 @@ class WikiSearch(BaseWorker):
             return action_output
             
         try:
-            # 从状态管理器获取状态
+            # Get state from state manager
             state = self.stm(self.workflow_instance_id)
             current_document = state.get('current_document', {})
             lookup_str = state.get('lookup_str', '')
@@ -98,7 +97,7 @@ class WikiSearch(BaseWorker):
             
             paragraphs = current_document['content'].split('\n\n')
             
-            # 更新lookup状态
+            # Update lookup state
             new_lookup_index = lookup_index
             if lookup_term.lower() != lookup_str:
                 new_lookup_str = lookup_term.lower()
@@ -118,7 +117,7 @@ class WikiSearch(BaseWorker):
                 result = f"{result_prefix} {lookups[new_lookup_index]}"
                 result = result.strip('\n').strip().replace('\n', '')
             
-            # 更新状态
+            # Update state
             self.stm(self.workflow_instance_id).update({
                 'lookup_str': new_lookup_str,
                 'lookup_index': new_lookup_index

@@ -1,7 +1,7 @@
 conductor_config:
   name: Configuration
   base_url:
-    value: http://10.8.21.200:8080
+    value: http://localhost:8080
     description: The Conductor Server API endpoint
     env_var: CONDUCTOR_SERVER_URL
   auth_key:
@@ -25,7 +25,7 @@ connectors:
   redis_stream_client:
     name: RedisConnector
     host:
-      value: 10.8.21.200
+      value: localhost
       env_var: HOST
     port:
       value: 6379
@@ -42,7 +42,7 @@ connectors:
   redis_stm_client:
     name: RedisConnector
     host:
-      value: 10.8.21.200
+      value: localhost
       env_var: HOST
     port:
       value: 6379

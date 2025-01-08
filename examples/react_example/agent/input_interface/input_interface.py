@@ -9,7 +9,7 @@ CURRENT_PATH = Path(__file__).parents[0]
 @registry.register_worker()
 class InputInterface(BaseWorker):
     def _process_input(self, input_data):
-        """处理输入数据，提取文本内容"""
+        """Process input data and extract text content"""
         if not input_data or 'messages' not in input_data:
             return None
         
@@ -20,19 +20,19 @@ class InputInterface(BaseWorker):
         return None
 
     def _run(self, *args, **kwargs):
-        # 获取 example 输入
+        # Get example input
         example_input = self.input.read_input(
             workflow_instance_id=self.workflow_instance_id, 
             input_prompt='Please input example (press Enter to skip):'
         )
         example = self._process_input(example_input)
 
-        # 获取 max_turns 输入
+        # Get max_turns input
         max_turns_input = self.input.read_input(
             workflow_instance_id=self.workflow_instance_id, 
             input_prompt='Please input max turns (default is 10, press Enter to use default):'
         )
-        max_turns = 10  # 默认值
+        max_turns = 10  # Default value
         max_turns_text = self._process_input(max_turns_input)
         if max_turns_text:
             try:
@@ -40,17 +40,17 @@ class InputInterface(BaseWorker):
             except ValueError:
                 logging.warning(f"Invalid max_turns input: {max_turns_text}, using default value: 10")
 
-        # 获取主要问题输入
+        # Get main question input
         user_input = self.input.read_input(
             workflow_instance_id=self.workflow_instance_id, 
             input_prompt='Please input your question:'
         )
         query = self._process_input(user_input)
         
-        # 返回所有参数
+        # Return all parameters
         return {
-            'query': query,                   # 用户输入的问题
-            'id': str(uuid.uuid4()),          # 生成唯一ID
-            'example': example,               # 用户输入的示例或None
-            'max_turns': max_turns            # 用户输入的最大轮次或默认值
+            'query': query,                   # User's question
+            'id': str(uuid.uuid4()),          # Generate unique ID
+            'example': example,               # User's example or None
+            'max_turns': max_turns            # User's max turns or default value
         } 

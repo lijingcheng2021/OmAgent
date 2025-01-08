@@ -25,41 +25,41 @@ class ThinkAction(BaseLLMBackend, BaseWorker):
 
     def _run(self, query: str, id: str = "", next_step: str = "Thought", example: str = "", *args, **kwargs):
         """Process the query using ReAct approach with combined Think and Action steps"""
-        # 从STM获取context
+        # Get context from STM
         state = self.stm(self.workflow_instance_id)
         context = state.get('context', '')
         
-        # 初始化 token_usage
+        # Initialize token_usage
         token_usage = state.get('token_usage', {
             'prompt_tokens': 0,
             'completion_tokens': 0,
             'total_tokens': 0
         })
 
-        # 如果是新的对话（context为空），初始化step_number
+        # Initialize step_number for new conversation (empty context)
         if not context:
             state['step_number'] = 1
         
-        # 获取当前步骤号
+        # Get current step number
         current_step = state.get('step_number', 1)
 
-        #获取模型调用参数
+        # Get model call parameters
         message = self.prep_prompt([{"question": query}])
         body = self.llm._msg2req(message[0])
         self.stm(self.workflow_instance_id)["body"] = body
 
-        # 记录输入信息
+        # Record input information
         self.callback.info(
             agent_id=self.workflow_instance_id, 
             progress='ThinkAction', 
             message=f'Step {current_step}'
         )
 
-        # 构建 prompt
+        # Build prompt
         full_prompt = f"{context}\n{next_step} {current_step}:" if context else f"{example}\nQuestion: {query}\n{next_step} {current_step}:"
         
         try:
-            # 首先尝试一次性获取思考和行动
+            # First try to get thought and action in one call
             response = self.simple_infer(
                 query=query, 
                 context=full_prompt,
@@ -69,10 +69,10 @@ class ThinkAction(BaseLLMBackend, BaseWorker):
             if "\nObservation" in output:
                 output = output.split("\nObservation")[0]
             try:
-                # 尝试分离思考和行动
+                # Try to separate thought and action
                 thought, action = output.strip().split(f"\nAction {current_step}: ")
             except:
-                # 如果分离失败，进行第二次尝试
+                # If separation fails, make a second attempt
                 thought = output.strip().split('\n')[0]
                 action_response = self.simple_infer(
                     query=query,
@@ -83,13 +83,13 @@ class ThinkAction(BaseLLMBackend, BaseWorker):
                     action_response['choices'][0]['message']['content'] = action_response['choices'][0]['message']['content'].split("\n")[0]
                 action = action_response['choices'][0]['message']['content'].strip()
             
-            # 更新 token usage
+            # Update token usage
             if 'usage' in response:
                 token_usage['prompt_tokens'] += response['usage']['prompt_tokens']
                 token_usage['completion_tokens'] += response['usage']['completion_tokens']
                 token_usage['total_tokens'] += response['usage']['total_tokens']
             
-            # 组合输出
+            # Combine output
             output = f"{thought}\nAction {current_step}: {action}"
             
         except Exception as e:
@@ -100,17 +100,17 @@ class ThinkAction(BaseLLMBackend, BaseWorker):
             )
             raise
         
-        # 检查是否是 Finish 动作
+        # Check if it's a Finish action
         is_final = 'Finish[' in action
         
-        # 记录输出信息
+        # Record output information
         self.callback.info(
             agent_id=self.workflow_instance_id, 
             progress='ThinkAction', 
             message=f'Step {current_step}: {output}'
         )
         
-        # 更新context并存入STM
+        # Update context and store in STM
         new_context = f"{context}\n{next_step} {current_step}: {output}" if context else f"{example}\nQuestion: {query}\n{next_step} {current_step}: {output}"
         state.update({
             'context': new_context,
