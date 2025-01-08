@@ -8,70 +8,83 @@ from pydantic import Field
 
 @registry.register_worker()
 class WikiSearch(BaseWorker):
+    """Wiki Search worker for React workflow"""
+    
     tool_manager: dict = Field(...)  # 改为 dict 类型
     
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.docstore = DocstoreExplorer(Wikipedia())
 
-    def _run(self, action_output: str, workflow_id: str, *args, **kwargs):
+    def _run(self, action_output: str, *args, **kwargs):
         """Execute search or lookup based on action output"""
         try:
             # 从STM获取context和其他状态
-            state = self.stm(workflow_id)
+            state = self.stm(self.workflow_instance_id)
             context = state.get('context', '')
-            current_document = state.get('current_document', {})
+            step_number = self._get_step_number(context)
             
             if 'Search[' in action_output:
-                result = self._handle_search(action_output, context)
+                result = self._handle_search(action_output)
             elif 'Lookup[' in action_output:
-                result = self._handle_lookup(action_output, context)
+                result = self._handle_lookup(action_output)
             else:
-                result = self._format_response(action_output, context)
+                result = action_output
                 
-            # 更新context
-            self.stm(workflow_id).update({'context': result['context']})
+            # 记录观察结果
+            self.callback.info(
+                agent_id=self.workflow_instance_id,
+                progress='Observation',
+                message=f'Step {step_number}: {result}'
+            )
+                
+            # 更新context（只在STM中保存，不在响应中返回）
+            new_context = f"{context}\nObservation {step_number}: {result}"
             
-            # 移除context从返回值中(因为已经存在STM中)
-            if 'context' in result:
-                del result['context']
-                
-            return result
+            # 更新状态，包括 context、step_number
+            state.update({
+                'context': new_context,
+                'step_number': step_number + 1  # 在一轮对话结束时更新步骤号
+            })
+            
+            # 返回结果，包含所有必要的信息
+            return {
+                'output': result
+            }
             
         except Exception as e:
-            logging.error(f"Error in _run: {str(e)}")
+            logging.error(f"Error in WikiSearch: {str(e)}")
             raise
 
-    def _handle_search(self, action_output: str, context: str):
+    def _handle_search(self, action_output: str) -> str:
         """Handle Search action"""
         search_term = self._extract_term('Search', action_output)
         if not search_term:
-            return self._format_response(action_output, context)
+            return action_output
         
         try:
             result = self.docstore.search(search_term)
             if result:
                 result_text = result.strip('\n').strip().replace('\n', '')
-                # 使用状态管理器存储状态
+                
+                # 更新状态
                 self.stm(self.workflow_instance_id).update({
                     'current_document': {'content': result},
                     'lookup_str': '',
                     'lookup_index': 0
                 })
-                return {
-                    'output': result_text,
-                    'context': f"{context}\nObservation {self._get_step_number(context)}: {result_text}"
-                }
+                
+                return result_text
             else:
-                return self._format_response(f"No content found for '{search_term}'", context)
+                return f"No content found for '{search_term}'"
         except Exception as e:
-            return self._format_response(f"Error occurred during search: {str(e)}", context)
+            return f"Error occurred during search: {str(e)}"
 
-    def _handle_lookup(self, action_output: str, context: str):
+    def _handle_lookup(self, action_output: str) -> str:
         """Handle Lookup action"""
         lookup_term = self._extract_term('Lookup', action_output)
         if not lookup_term:
-            return self._format_response(action_output, context)
+            return action_output
             
         try:
             # 从状态管理器获取状态
@@ -81,7 +94,7 @@ class WikiSearch(BaseWorker):
             lookup_index = state.get('lookup_index', 0)
 
             if not current_document:
-                raise ValueError("No previous search results available. Please perform a search first.")
+                return "No previous search results available. Please perform a search first."
             
             paragraphs = current_document['content'].split('\n\n')
             
@@ -105,31 +118,18 @@ class WikiSearch(BaseWorker):
                 result = f"{result_prefix} {lookups[new_lookup_index]}"
                 result = result.strip('\n').strip().replace('\n', '')
             
-            # 更新状态管理器中的状态
-            state.update({
+            # 更新状态
+            self.stm(self.workflow_instance_id).update({
                 'lookup_str': new_lookup_str,
                 'lookup_index': new_lookup_index
             })
             
-            return {
-                'output': result,
-                'context': f"{context}\nObservation {self._get_step_number(context)}: {result}"
-            }
+            return result
             
         except ValueError as ve:
-            return self._format_response(str(ve), context)
+            return str(ve)
         except Exception as e:
-            return self._format_response(f"Error occurred during lookup: {str(e)}", context)
-
-    def _format_response(self, result: str, context: str):
-        """Format basic response"""
-        return {
-            'output': result,
-            'context': f"{context}\nObservation {self._get_step_number(context)}: {result}",
-            'current_document': None,
-            'lookup_str': '',
-            'lookup_index': 0
-        }
+            return f"Error occurred during lookup: {str(e)}"
 
     def _extract_term(self, action_type: str, action_output: str) -> str:
         """Extract term from action output"""
@@ -140,12 +140,5 @@ class WikiSearch(BaseWorker):
         return ""
 
     def _get_step_number(self, context: str) -> int:
-        """Get the next step number based on context"""
-        if not context:
-            return 1
-        lines = context.split('\n')
-        step_count = sum(1 for line in lines if any(
-            line.strip().startswith(f"{marker} ") and any(c.isdigit() for c in line)
-            for marker in ['Thought', 'Action', 'Observation']
-        ))
-        return (step_count // 3) + 1 
+        """Get the current step number from STM"""
+        return self.stm(self.workflow_instance_id).get('step_number', 1) 

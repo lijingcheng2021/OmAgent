@@ -21,9 +21,6 @@ conductor_config:
     description: Debug mode
     env_var: DEBUG
 
-react_workflow:
-  max_turns: 3
-
 connectors:
   redis_stream_client:
     name: RedisConnector

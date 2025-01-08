@@ -1,11 +1,11 @@
-from omagent_core.utils.container import container
 from pathlib import Path
-from omagent_core.utils.registry import registry
+from omagent_core.utils.container import container
 
 CURRENT_PATH = Path(__file__).parents[0]
-registry.import_module()
 
-container.register_callback(callback='AppCallback')
-container.register_input(input='AppInput')
+# 加载 container 配置从 YAML 文件
 container.register_stm("RedisSTM")
-container.compile_config(CURRENT_PATH) 
+container.from_config(CURRENT_PATH.joinpath('container.yaml'))
+
+# 编译配置
+container.compile() 

@@ -1,4 +1,4 @@
-# ReAct Basic Example
+# ReAct Example
 
 ReAct (Reasoning and Acting) is a paradigm that combines reasoning and acting in an interleaved manner. The agent uses reasoning to determine what actions to take and interprets the results of those actions to inform further reasoning.
 
@@ -10,12 +10,11 @@ cd examples/react_example
 
 ## Overview
 
-This example implements a basic ReAct workflow that consists of following components:
+This example implements a ReAct workflow that consists of following components:
 
-1. **Input Interface (ReactInputBasic)**
+1. **Input Interface**
    - Handles user input containing questions
-   - Allows optional example input
-   - Configurable maximum turns setting
+   - Supports both CLI and programmatic interfaces
 
 2. **ReAct Workflow**
    - Think: Reason about the current state and decide next action
@@ -24,6 +23,8 @@ This example implements a basic ReAct workflow that consists of following compon
    - Repeat until the task is complete or max turns reached
 
 ### The workflow follows this pattern:
+
+![ReAct Workflow](../../docs/images/react.png)
 
 1. User provides input (question)
 2. Agent thinks about the question
@@ -83,23 +84,21 @@ If you encounter issues:
 - Check the proxy settings if needed
 
 Common issues:
-- Input loop problems: Make sure your Redis connection is stable
+- Connection errors: Check your network settings
 - LLM errors: Verify your API key and endpoint
-- Connection issues: Check your network and proxy settings
+- Redis errors: Ensure Redis server is running
 
 ## Example Usage
 
 Here's a simple example of using the ReAct agent:
 
 ```bash
-Please input example (press Enter to skip):
-[Press Enter to skip]
-
-Please input max turns (default is 10, press Enter to use default):
-[Press Enter to use default]
+$ python run_cli.py
 
 Please input your question:
 What is the birth date of Mao Zedong?
+
+[Agent starts reasoning and searching...]
 ```
 
 The agent will then:

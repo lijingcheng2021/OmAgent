@@ -1,4 +1,4 @@
 llm: ${sub| text_res}
 tools:
   - name: TavilyWebSearch
-    tavily_api_key: ${env|tavily_api_key, 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} 
+    tavily_api_key: ${env|tavily_api_key, null}
