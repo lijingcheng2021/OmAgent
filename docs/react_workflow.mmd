@@ -1,0 +1,45 @@
+graph TD
+    subgraph ReactWorkflow
+        A[Start] --> B[Initialize ConductorWorkflow]
+        B --> C[Set Input]
+        C --> D[Configure Tasks]
+        D --> E[Configure Workflow]
+    end
+
+    subgraph Task Configuration
+        D --> D1[Think Action Task]
+        D --> D2[Wiki Search Task]
+        D --> D3[Loop Task]
+        D --> D4[Output Task]
+        
+        D1 --> |Input| D1_1[query]
+        D1 --> |Input| D1_2[id]
+        D1 --> |Output| D1_3[action]
+        
+        D2 --> |Input| D2_1[action_output]
+        D2 --> |Output| D2_2[observation]
+        
+        D3 --> |Contains| D3_1[Think Action Task]
+        D3 --> |Contains| D3_2[Wiki Search Task]
+        D3 --> |Condition| D3_3{Check Loop}
+        D3_3 --> |True| D3_1
+        D3_3 --> |False| D4
+        
+        D4 --> |Input| D4_1[action_output]
+        D4 --> |Input| D4_2[workflow_id]
+    end
+
+    subgraph Termination Logic
+        D3_3 --> |Check| T1[is_final == true]
+        D3_3 --> |Check| T2[step_number > max_steps]
+        T1 --> |Yes| F[Stop Loop]
+        T2 --> |Yes| F
+    end
+
+    classDef taskNode fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef inputNode fill:#bbf,stroke:#333,stroke-width:1px;
+    classDef conditionNode fill:#ff9,stroke:#333,stroke-width:2px;
+    
+    class D1,D2,D3,D4 taskNode;
+    class D1_1,D1_2,D1_3,D2_1,D2_2,D4_1,D4_2 inputNode;
+    class D3_3,T1,T2 conditionNode; 

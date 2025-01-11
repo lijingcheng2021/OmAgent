@@ -12,7 +12,6 @@ CURRENT_PATH = Path(__file__).parents[0]
 class ThinkAction(BaseLLMBackend, BaseWorker):
     """Combined Think and Action worker that implements ReAct (Reasoning and Acting) approach"""
     
-    # debug_mode: bool = Field(default=False)
     example: str = Field(default="")
     max_steps: int = Field(default=8)
 

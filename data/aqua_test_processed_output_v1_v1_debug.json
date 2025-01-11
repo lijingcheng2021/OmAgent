@@ -1,0 +1,32 @@
+{
+  "dataset": "aqua",
+  "model_id": "gpt-3.5-turbo",
+  "alg": "ReAct",
+  "model_result": [
+    {
+      "id": "21",
+      "question": "A grocer makes a 25% profit on the selling price for each bag of flour it sells. If he sells each bag for $100 and makes $3,000 in profit, how many bags did he sell? Answer Choices:\n(A) 12 (B) 16 (C) 24 (D) 30 (E) 40",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[120 bags of flour]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 2368,
+      "completion_tokens": 120
+    }
+  ]
+}

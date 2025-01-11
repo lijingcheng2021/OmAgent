@@ -1,0 +1,2455 @@
+    {
+      "id": "5a7ea14655429930675135ab",
+      "question": "What giant silverware company was started as a religious Utopian group and was for many years run by Pierrepont Noyes?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Oneida Limited]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 3615,
+      "completion_tokens": 201
+    },
+    {
+      "id": "5a76a2b55542993569682c6c",
+      "question": "WonderWorks made an adaptation of what novel created by Frances Hogson Burnett?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 2: Finish[\"The Secret Garden\"]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 1424,
+      "completion_tokens": 70
+    },
+    {
+      "id": "5a893f305542993b751ca91e",
+      "question": "The Whitehead Light is located in what town with a population of 2,591 during the 2010 census?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 3: Finish[2,591 residents]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 2918,
+      "completion_tokens": 44
+    },
+    {
+      "id": "5abd648155429933744ab7ac",
+      "question": "Who was the chief executive officer of the second largest US car rental company by sales?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[CEO of Enterprise Holdings]",
+      "ground_truth": "",
+      "step_number": 8,
+      "prompt_tokens": 8436,
+      "completion_tokens": 259
+    },
+    {
+      "id": "5a83305d55429966c78a6b4a",
+      "question": "In which U.S. state are MedStar Georgetown University Hospital and Providence Hospital?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 1: Finish[Washington, D.C.]",
+      "ground_truth": "",
+      "step_number": 1,
+      "prompt_tokens": 1164,
+      "completion_tokens": 41
+    },
+    {
+      "id": "5abb08c65542996cc5e49f61",
+      "question": "George Borba was part of the team that competed at what 1970 championship?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Unable to determine the championship George Borba was part of in 1970.]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 2054,
+      "completion_tokens": 362
+    },
+    {
+      "id": "5ab56f3e5542992aa134a317",
+      "question": "Which genus of flowering plant is found in an environment further south, Crocosmia or Cimicifuga?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Crocosmia]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 3390,
+      "completion_tokens": 124
+    },
+    {
+      "id": "5a7b220855429931da12c9e5",
+      "question": "The Julian P. Kanter Political Commercial Archive has been designated an official project by an initiative to preserve and protect what?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 2: Finish[political television and radio commercials]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 2617,
+      "completion_tokens": 93
+    },
+    {
+      "id": "5ab9988b554299131ca4238e",
+      "question": "Who is the American actress that stars in the movie \"Innocesnce\" and is best known for her role as Alexandra Cabot in a long-running NBC series?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 7: Finish[Information not available online or search terms may be incorrect. Additional research or assistance from another source may be required.]",
+      "ground_truth": "",
+      "step_number": 7,
+      "prompt_tokens": 12049,
+      "completion_tokens": 331
+    },
+    {
+      "id": "5a86141f5542996432c571a5",
+      "question": "Ashley Benson portrayed the role of Brit in the 2012 crime film directed by whom?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 5: Finish[Harmony Korine]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 7744,
+      "completion_tokens": 192
+    },
+    {
+      "id": "5ae618535542995703ce8af7",
+      "question": "The Church of St Peter in Pertenhall, Bedfordshire, England was added to this register on 13 July 1964.",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 7: Finish[Consult official heritage or listing websites for accurate details on why the Church of St Peter in Pertenhall, Bedfordshire, England was designated as a Grade II* listed building and added to the register on 13 July 1964.]",
+      "ground_truth": "",
+      "step_number": 7,
+      "prompt_tokens": 10632,
+      "completion_tokens": 350
+    },
+    {
+      "id": "5a774c0155429966f1a36ce2",
+      "question": "Which women's magazine was published first, Mirabella or Home Monthly?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 8: Finish[Mirabella]",
+      "ground_truth": "",
+      "step_number": 8,
+      "prompt_tokens": 9591,
+      "completion_tokens": 349
+    },
+    {
+      "id": "5a8ed7b455429917b4a5bdd1",
+      "question": "Rob is an American sitcom that starred what American actress who was best known for portraying Yolanda Saldivar in the film Selena?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 5: Finish[Christian Serratos]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 7921,
+      "completion_tokens": 288
+    },
+    {
+      "id": "5a72814f5542994cef4bc2eb",
+      "question": "The American Astronomical Society presents an award named after what New Zealand astronomer?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Beatrice Muriel Hill Tinsley]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 3025,
+      "completion_tokens": 126
+    },
+    {
+      "id": "5a7c960655429935c91b5244",
+      "question": "The 1974 Texas Tech Raiders football team represented what public research university in Lubbock, Texas?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Texas Tech University]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 2800,
+      "completion_tokens": 134
+    },
+    {
+      "id": "5ac3e22d5542997ea680c976",
+      "question": "Michelle Lewis has written songs for which \"Lizzie McGuire\" actress? ",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Hilary Duff]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 2508,
+      "completion_tokens": 208
+    },
+    {
+      "id": "5a71646e5542994082a3e80e",
+      "question": "What is the proper name for the steroid used by the retired British track sprinter who is one of the fastest European sprinters in the history of athletics?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 4: Finish[nandrolone] ",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 3708,
+      "completion_tokens": 82
+    },
+    {
+      "id": "5ae4b8fc55429913cc2044e5",
+      "question": "When did the place in Canada where François Beaucourt (1740-1794) was mainly active acquired its present name?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Thought 3: The Province of Quebec acquired its present name in 1867 through the Constitution Act.\nAction 3: Finish[1867]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 2667,
+      "completion_tokens": 177
+    },
+    {
+      "id": "5ae504a855429908b63264df",
+      "question": "Which movie is a documentary about \"Beowulf & Grendel\", between My Kid Could Paint That and Wrath of Gods?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[My Kid Could Paint That]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9719,
+      "completion_tokens": 357
+    },
+    {
+      "id": "5abfc8675542993fe9a41e52",
+      "question": "Mawson  is an electoral district that includes the wine regional around which town 35 km south of Adelaide?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Willunga]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 2833,
+      "completion_tokens": 379
+    },
+    {
+      "id": "5a8841a35542994846c1ce69",
+      "question": "What format does a 1170 kHz AM station that Jim Angel presented the news for have?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Unable to find the format of the 1170 kHz AM station where Jim Angel presented the news. Further research or direct communication with relevant parties may be required for accurate details.]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 2837,
+      "completion_tokens": 487
+    },
+    {
+      "id": "5adf36c55542993344016c3e",
+      "question": "In what category did the composer of \"Elliot, a Soldier's Fugue\" win a Tony Award in 2008?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Quiara Alegría Hudes did not win a Tony Award in 2008 for \"Elliot, a Soldier's Fugue.\"]",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 13972,
+      "completion_tokens": 507
+    },
+    {
+      "id": "5a8c5569554299240d9c2126",
+      "question": "Are Daryl Hall and Gerry Marsden both musicians?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 2: Finish[Yes]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 2687,
+      "completion_tokens": 119
+    },
+    {
+      "id": "5ae4a45b55429970de88d9ed",
+      "question": "Although he mostly provided backing vocals as part of this group, Mark Owen's first single \"Four Minute Warning\" released on 4 August 2003, was once part of this English pop music group.",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Take That]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 3155,
+      "completion_tokens": 128
+    },
+    {
+      "id": "5ac13d5c5542996f0d89cc78",
+      "question": "Macaulay Carson Culkin was regarded as the most successful child actor since which actress, who was Hollywood's number one box-office draw as a child actress from 1935 to 1938?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 5: Finish[Shirley Temple]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 6156,
+      "completion_tokens": 192
+    },
+    {
+      "id": "5ab5a7f45542997d4ad1f1a5",
+      "question": "What organization does Sandra Pizzarello and Doctorate have in common?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 3: Finish[No known direct connection between Sandra Pizzarello and Doctorate with an organization based on current search results]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5634,
+      "completion_tokens": 207
+    },
+    {
+      "id": "5ab2659e554299340b5254b2",
+      "question": "From March 631 to April 631, Farrukhzad Khosrau V was the king of an empire that succeeded which empire?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Parthian Empire]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 2731,
+      "completion_tokens": 176
+    },
+    {
+      "id": "5a74c3f455429979e2882a0a",
+      "question": "What product by FLEXcon represents data by geometric patterns?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 6: Finish[Contact FLEXcon directly or visit their official website for information on products related to data representation by geometric patterns.]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 6838,
+      "completion_tokens": 155
+    },
+    {
+      "id": "5a78ce5d55429974737f78ac",
+      "question": "The southernmost administrative region of Denmark is well-known for creating what products?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 8: Finish[Seek out local sources or experts familiar with Southern Denmark to uncover the specific products that the region is renowned for creating.]",
+      "ground_truth": "",
+      "step_number": 8,
+      "prompt_tokens": 25125,
+      "completion_tokens": 380
+    },
+    {
+      "id": "5ae0b4c15542993d6555ec21",
+      "question": "What are The Ready Set and Cell?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 9: Finish[The Ready Set is an American singer-songwriter project led by Jordan Mark Witzigreuter, while \"Cell\" remains unclear in the context of music, possibly requiring further research to clarify its relevance.]",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 9133,
+      "completion_tokens": 556
+    },
+    {
+      "id": "5ae53b545542990ba0bbb23c",
+      "question": "Where does the hotel and casino located in which Bill Cosby's third album was recorded?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 8: Finish[Unable to locate the specific hotel and casino where Bill Cosby's third album was recorded. Additional sources such as biographies, interviews, or archived records may be needed to obtain this information.]",
+      "ground_truth": "",
+      "step_number": 8,
+      "prompt_tokens": 38024,
+      "completion_tokens": 395
+    },
+    {
+      "id": "5ab29426554299545a2cf99f",
+      "question": "Calvin Murphy's record of being the shortest NBA player to play in an All-Star Game was tied by a player who was sent to what team in 2017?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 8: Finish[Unable to find specific player who tied Calvin Murphy's record and team he was sent to in 2017]",
+      "ground_truth": "",
+      "step_number": 8,
+      "prompt_tokens": 26286,
+      "completion_tokens": 488
+    },
+    {
+      "id": "5a7662745542992db9473786",
+      "question": "Who founded the collective which released the album Messe I.X-VI.X?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Kristoffer Rygg]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 4584,
+      "completion_tokens": 72
+    },
+    {
+      "id": "5ab7178f5542991d32223774",
+      "question": "The film Navakoti Narayana was based on the life of Purandara Dasa who was born in what year?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[1470]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 3255,
+      "completion_tokens": 33
+    },
+    {
+      "id": "5ae09ce855429924de1b7113",
+      "question": "What was the highest ranking in the United States for a single written by an English multi-instrumentalist?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 5: Finish[32 songs that have topped the Billboard Hot 100]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 7909,
+      "completion_tokens": 319
+    },
+    {
+      "id": "5ae73eca5542991e8301cc37",
+      "question": "What other notable role did the star actor from Jeremy perform? ",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 7: Finish[Unfortunately, the specific notable roles of Patrick Howard, the star actor from Jeremy, could not be found through online searches. To obtain this information, one may need to consult industry databases or reach out to reputable film industry professionals for assistance.]",
+      "ground_truth": "",
+      "step_number": 7,
+      "prompt_tokens": 5165,
+      "completion_tokens": 382
+    },
+    {
+      "id": "5a76a8bb5542993569682c76",
+      "question": "In what country did Gildo Siopaes win a bronze medal for bobsledding in the 1964 Winter Olympics?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 5: Finish[Unable to locate specific information on Gildo Siopaes and his bronze medal in bobsledding at the 1964 Winter Olympics.]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 6439,
+      "completion_tokens": 235
+    },
+    {
+      "id": "5ae807d25542993210984045",
+      "question": "Nominated in ten categories at the 38th Annual César Awards ceremony was a film whose narrative focuses on what two people?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 4: Finish[\"Amour\" directed by Michael Haneke, focusing on the two lead characters Jean-Louis Trintignant and Emmanuelle Riva]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 4852,
+      "completion_tokens": 183
+    },
+    {
+      "id": "5ab53bee554299637185c526",
+      "question": "God Is Not Great is by a journalist which due to his actions made him what?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 3: Finish[Christopher Hitchens became notable for his critical views on religion, support for atheism, and outspoken political opinions.]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 2972,
+      "completion_tokens": 104
+    },
+    {
+      "id": "5ab8eabb5542991b5579f03d",
+      "question": "Frank Blake's longtime protégé was also the chairman and CEO of what company in addition to The Home Depot?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 4: Finish[Chrysler Corporation]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 4471,
+      "completion_tokens": 248
+    },
+    {
+      "id": "5ab416a25542996a3a969f28",
+      "question": "Where was the Danish colony, in which the Scandinavian Collectors Club claims as part of their region and includes the islands of Saint Thomas, located?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 3: Finish[Caribbean, Danish West Indies]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 4298,
+      "completion_tokens": 138
+    },
+    {
+      "id": "5ac0aab35542992a796ded5c",
+      "question": "Meet Market is a 2004 film starring which son of a former prime minister?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[No answer found]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 2821,
+      "completion_tokens": 192
+    },
+    {
+      "id": "5ae0d7bf5542990adbacf67b",
+      "question": "Which Walt Disney film was released earlier, The Rescuers or The Muppets?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 3: Finish[The Rescuers]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 4397,
+      "completion_tokens": 167
+    },
+    {
+      "id": "5a8f06075542995b44241f2d",
+      "question": "What car did the German rally driver, who won victories for Fiat, Opel, Lancia, and Audi drive?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 10: Search[list of notable German rally drivers and their cars]",
+      "ground_truth": "",
+      "step_number": 10,
+      "prompt_tokens": 17622,
+      "completion_tokens": 451
+    },
+    {
+      "id": "5ae76c625542997ec272763e",
+      "question": "Which founder of Alcatraz East was born on March 31, 1956?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 5: Finish[Information not readily available]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 8187,
+      "completion_tokens": 277
+    },
+    {
+      "id": "5a77a44d5542997042120aba",
+      "question": "What census-designated place located in Nassau County, New York has as portions of it's territory, districts of Brian Curran, New York State assemblyman?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 7: Finish[Rockville Centre]",
+      "ground_truth": "",
+      "step_number": 7,
+      "prompt_tokens": 7163,
+      "completion_tokens": 515
+    },
+    {
+      "id": "5a714f6f5542994082a3e7b3",
+      "question": "How many people live in the County serviced by The Collier Area Transit system?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[384,902]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 4770,
+      "completion_tokens": 274
+    },
+    {
+      "id": "5a807ea1554299485f598624",
+      "question": "What church was the college Marjorie Hass is the 20th president of formerly affiliated with?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Presbyterian Church (USA)]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 1564,
+      "completion_tokens": 142
+    },
+    {
+      "id": "5a90ab995542990a98493683",
+      "question": "Which genus expands to the Pacific Ocean islands, Osteomeles or Medinilla?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 3: Finish[Medinilla]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 3409,
+      "completion_tokens": 180
+    },
+    {
+      "id": "5ac3d7f8554299076e296cb0",
+      "question": "The Feminine Touch is a drama film starring which English actress?",
+      "body": {},
+      "last_output": "Action 4: Finish[The Feminine Touch stars Belinda Lee and Delphi Lawrence, both English actresses. The primary star of the film is Belinda Lee.]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 3332,
+      "completion_tokens": 54
+    },
+    {
+      "id": "5a8ab6be5542992d82986f5f",
+      "question": "In which city was this band formed, whose rhythm guitarist featured in \"Cupid's Chokehold?\"",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 2: Finish[Geneva, New York]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 2219,
+      "completion_tokens": 70
+    },
+    {
+      "id": "5ae5f3bb5542996de7b71a7e",
+      "question": "Which star of The Human Stain was born in 1937?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Anthony Hopkins]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 3976,
+      "completion_tokens": 106
+    },
+    {
+      "id": "5ab4341c55429942dd415ede",
+      "question": "The Shōgitai were an elite corps of which shogunate?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Tokugawa shogunate]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 3466,
+      "completion_tokens": 123
+    },
+    {
+      "id": "5a85b2d95542997b5ce40028",
+      "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Aladin]",
+      "ground_truth": "",
+      "step_number": 7,
+      "prompt_tokens": 3218,
+      "completion_tokens": 349
+    },
+    {
+      "id": "5abbdd565542993f40c73bfb",
+      "question": "What is the airport code for the Vilnius Airport that ceased operations in 2015?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 4: Finish[Further research or access to aviation databases may be required to find the airport code for the Vilnius Airport that ceased operations in 2015.]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 4904,
+      "completion_tokens": 207
+    },
+    {
+      "id": "5a83b01c5542996488c2e489",
+      "question": "What Argentinian retired defensive midfielder, and current manager of C.D. Guadalajara, was traded to Parma alongside Sérgio Conçeicão at the end of the 1999–2000 season? ",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 10: Finish[Unable to identify the specific Argentine defensive midfielder traded to Parma alongside Sérgio Conceição at the end of the 1999-2000 season]",
+      "ground_truth": "",
+      "step_number": 10,
+      "prompt_tokens": 11861,
+      "completion_tokens": 961
+    },
+    {
+      "id": null,
+      "question": null,
+      "body": {},
+      "last_output": "Further research or inquiries into official brand locations may be necessary to obtain the answer to the question.",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    {
+      "id": "5ae1fd995542997283cd2313",
+      "question": "Is It Just Me? was a single by the English rock band from what Suffolk city?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Lowestoft, Suffolk]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 5780,
+      "completion_tokens": 131
+    },
+    {
+      "id": "5a710bb15542994082a3e50d",
+      "question": "Which American professional poker player also starred in the 2015 movie \"Extraction\"?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[No American professional poker player starred in the 2015 movie \"Extraction.\"]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 6783,
+      "completion_tokens": 492
+    },
+    {
+      "id": "5a73551e5542991f29ee2d84",
+      "question": "Who was born first, Lawrence Ferlinghetti or Luigi Pirandello?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 5: Finish[Luigi Pirandello was born first before Lawrence Ferlinghetti.]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 5605,
+      "completion_tokens": 248
+    },
+    {
+      "id": "5a7f63645542992e7d278cf1",
+      "question": "Did Vertical Horizon or LCD Soundsystem start their bands first?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Vertical Horizon]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 6921,
+      "completion_tokens": 225
+    },
+    {
+      "id": "5a89e98955429946c8d6ea0c",
+      "question": "While at the University of Michigan, Louis Smith played with what American jazz trumpeter, bandleader, and composer?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 2: Finish[Thaddeus Jones]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 2301,
+      "completion_tokens": 56
+    },
+    {
+      "id": "5a79257b55429974737f79a7",
+      "question": "What military formation were participated in by both Oscar W. Koch and General George Smith Patton Jr. ?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 5: Finish[Third Army]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 8001,
+      "completion_tokens": 190
+    },
+    {
+      "id": "5ab4396555429942dd415eed",
+      "question": "What Kenya-based company owns the Tusker beer brand?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[East African Breweries Limited]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 1459,
+      "completion_tokens": 50
+    },
+    {
+      "id": "5addda1b5542992200553b55",
+      "question": "Wilm Hosenfeld assisted the pianist and composer of what nationality survive during 1944?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 2: Finish[Polish]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 3127,
+      "completion_tokens": 124
+    },
+    {
+      "id": "5ab7c6995542993667794005",
+      "question": "Before composing music for the game which contains Chocobos and Moogles, what cover band was he involved in?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 3: Finish[The Black Mages]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 3420,
+      "completion_tokens": 125
+    },
+    {
+      "id": "5a778f515542995d831811cd",
+      "question": "What was the nickname of the author of the comic strip on which a a 2015 American 3D computer-animated comedy film produced by Blue Sky Studios and distributed by 20th Century Fox was based?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[The Man Who Invented Science Fiction Comics]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 2853,
+      "completion_tokens": 231
+    },
+    {
+      "id": "5ac3d21e554299204fd21e8b",
+      "question": "Which composer was wrote his music most recently, Michael Tippett or Luigi Cherubini?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 2: Finish[Michael Tippett]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 2294,
+      "completion_tokens": 81
+    },
+    {
+      "id": "5a7a845755429941d65f2684",
+      "question": "Which film was released more recently, Make Mine Music or Old Dogs?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 3: Finish[\"Old Dogs\"]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 3377,
+      "completion_tokens": 124
+    },
+    {
+      "id": "5a843b045542996488c2e518",
+      "question": "Which castles, besides Bamburgh Castle, are located on the northeast coast of England?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 4: Finish[Bamburgh Castle, Lindisfarne Castle, Alnwick Castle]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 6176,
+      "completion_tokens": 207
+    },
+    {
+      "id": "5a8843cd5542994846c1ce75",
+      "question": "What river can a  large African bovine be seen bathing in in the Mwabvi Wildlife Reserve?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Mwabvi River]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 2552,
+      "completion_tokens": 245
+    },
+    {
+      "id": "5ac38c0755429939154137bb",
+      "question": "Where were the brothers from that manufactured the balloon in which François Laurent d'Arlandes andJean-François Pilâtre de Rozier made the first manned free balloon flight? ",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Annonay, Ardèche, France]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 16952,
+      "completion_tokens": 210
+    },
+    {
+      "id": "5a87411d5542994846c1cd37",
+      "question": "What job did Jörgen Smit work, where he was working in the world center for the anthroposophical movement?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 2: Finish[general secretary of the Norwegian Anthroposophical Society and member of the Executive Council of the General Anthroposophical Society at the Goetheanum in Dornach, Switzerland]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 2764,
+      "completion_tokens": 151
+    },
+    {
+      "id": "5a7c221f554299683c1c62d2",
+      "question": "New Hampshire Route 124 runs between two regions, one of which is found in Cheshire County, New Hampshire, United States with the population of about 2000 and is named what?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 5: Finish[Rindge]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 5675,
+      "completion_tokens": 258
+    },
+    {
+      "id": "5ae48e7e55429913cc20449d",
+      "question": "Gualdo Tadino Cathedral, a Roman Catholic cathedral, was dedicated to Saint Bendict of Nursia who is a patron saint of what continent?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 2: Finish[Europe]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 2153,
+      "completion_tokens": 77
+    },
+    {
+      "id": "5ab7f97a5542991d322237ef",
+      "question": "What is Opry Mills in Nashville, Tennessee?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 2: Finish[Opry Mills in Nashville, Tennessee is a super-regional shopping mall with anchor stores like Regal Cinemas, Madame Tussauds, Bass Pro Shops, H&M, and entertainment options such as Dave & Buster's, located adjacent to the Grand Ole Opry House and the Gaylord Opryland Resort & Convention Center.]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 2691,
+      "completion_tokens": 156
+    },
+    {
+      "id": "5ae6c7b35542992ae0d1639c",
+      "question": "What is the magazine that listed \"Jump Around\" by House of Pain at 325 out of \"500 greatest songs since you were born\", known for?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 3: Finish[Blender magazine]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5140,
+      "completion_tokens": 123
+    },
+    {
+      "id": "5a8198565542995ce29dcc13",
+      "question": "Are Ranger Rick and Tennis both sports magazines?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 6: Finish[Tennis]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 5195,
+      "completion_tokens": 185
+    },
+    {
+      "id": "5ac0a18a5542992a796ded41",
+      "question": "What genre did the writer whose novel was based on \"I'll Take Manhattan\" writes?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 2: Finish[romance]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 2725,
+      "completion_tokens": 79
+    },
+    {
+      "id": "5ae5b25d5542990ba0bbb2bb",
+      "question": "Who has a wider scope of profession, Christopher Guest or  Roman Karmen?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Roman Karmen has a wider scope of profession, as he was a film director, war cinematographer, documentary filmmaker, journalist, screenwriter, pedagogue, and publicist, while Christopher Guest is primarily known as an actor, comedian, screenwriter, and director.]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 9044,
+      "completion_tokens": 404
+    },
+    {
+      "id": "5ab506a05542990594ba9cd6",
+      "question": "Which has more species, Sonerila or Scaevola?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 4: Finish[Sonerila]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 4309,
+      "completion_tokens": 282
+    },
+    {
+      "id": "5ab97d0a5542996be202051e",
+      "question": "Who was hung for assisting the attempted surrender of a defector from the American Continental Army to the British Army?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 6: Finish[The specific individual who was hanged for assisting the attempted surrender of a defector from the American Continental Army to the British Army during the American Revolutionary War could not be found through the search. Further research from historical records or academic literature on this particular event may be necessary to uncover this information.]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 13732,
+      "completion_tokens": 583
+    },
+    {
+      "id": "5a83697e5542996488c2e441",
+      "question": " Park Seo-joon is best known for his role in a series that premiered on what month and day?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[July 4, 2020]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 2924,
+      "completion_tokens": 238
+    },
+    {
+      "id": "5abaf6865542996cc5e49f3c",
+      "question": "What role did Thomas Doherty play in sitcom based on the Israeli series \"North Star\"?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Thomas Doherty played the role of The Champ in the sitcom \"High Fidelity\" based on the Israeli series \"North Star.\"]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 3749,
+      "completion_tokens": 422
+    },
+    {
+      "id": "5a835478554299123d8c20ed",
+      "question": "How many copies of Roald Dahl's variation on a popular anecdote sold?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 4: Finish[Specific sales figures for Roald Dahl's variation on a popular anecdote are not directly mentioned in the search results.]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 8523,
+      "completion_tokens": 201
+    },
+    {
+      "id": "5a7c465a5542990527d5547f",
+      "question": "The Churchills is a TV exploration of Winston Churchill and his ancestor the Duke of Marlborough, presented by which English historian and broadcaster?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[David Starkey]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 2801,
+      "completion_tokens": 208
+    },
+    {
+      "id": "5adcd5005542994d58a2f6f0",
+      "question": "Who voices the character that stars in Baseball Bugs?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Mel Blanc]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 2735,
+      "completion_tokens": 80
+    },
+    {
+      "id": "5abb207d5542992ccd8e7f1d",
+      "question": "Wincenty Gostkowski was a lawyer for the watch manufacturer Patek Philippe & Co. in which city in Switzerland?",
+      "body": {},
+      "last_output": "Action 2: Finish[Geneva]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 2300,
+      "completion_tokens": 22
+    },
+    {
+      "id": "5a849c135542992a431d1a7a",
+      "question": "What was the 2016 population of the city on the Bay Fundy which had an office of the Bank of British North America?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 6: Finish[Unable to find specific information, more detailed historical records or local sources may be needed for an accurate answer].",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 16796,
+      "completion_tokens": 430
+    },
+    {
+      "id": "5adef1b35542993a75d263af",
+      "question": "which Mexican and American film actress is Ethel Houbiers  French voice of ",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Salma Hayek]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 4011,
+      "completion_tokens": 264
+    },
+    {
+      "id": "5abfd83f5542997ec76fd45c",
+      "question": "Which genus has more species, Quesnelia or Honeysuckle?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Quesnelia has more species than Honeysuckle, as Quesnelia has 22 known species.]",
+      "ground_truth": "",
+      "step_number": 7,
+      "prompt_tokens": 6497,
+      "completion_tokens": 302
+    },
+    {
+      "id": "5ab811395542990e739ec80f",
+      "question": "Which continent have a distribution of both the Ternstroemia and Cussonia genus of plants? ",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 3: Finish[Africa]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 4459,
+      "completion_tokens": 113
+    },
+    {
+      "id": "5ac2d85e55429921a00ab06b",
+      "question": "Where did the hijacked plane rammed by Heather Penney crash? ",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 1: Finish[a field in Pennsylvania]",
+      "ground_truth": "",
+      "step_number": 1,
+      "prompt_tokens": 1149,
+      "completion_tokens": 27
+    },
+    {
+      "id": "5abf44025542993fe9a41def",
+      "question": "which writer has the highest number of skill  Langston Hughes or  Ian McEwan",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 4: Finish[Langston Hughes]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 6279,
+      "completion_tokens": 117
+    },
+    {
+      "id": "5addf0fd5542997dc79070d2",
+      "question": "Which record producer from Stockbridge, Georgia is the lead singer of Collective Soul?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[Ed Roland]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 1423,
+      "completion_tokens": 58
+    },
+    {
+      "id": "5adc760c5542994650320d11",
+      "question": "who starred in the English-language Danish experimental horror film  which  Lars von Triers received award for ",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 3: Finish[Willem Dafoe and Charlotte Gainsbourg]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 3355,
+      "completion_tokens": 96
+    },
+    {
+      "id": "5abf1a6b5542997ec76fd3c1",
+      "question": "From which alphabet was this alphabet derived that the name of the club Ilysiakos B.C. has the starting letter of?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 4: Finish[Phoenician alphabet]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 4033,
+      "completion_tokens": 62
+    },
+    {
+      "id": "5a7b55375542995eb53be91f",
+      "question": "Who did the player nicknamed \"The Human Highlight Film\" play for after he left the Atlanta Hawks?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 2: Finish[Los Angeles Clippers, Boston Celtics, Panathinaikos, Fortitudo Bologna, San Antonio Spurs, Orlando Magic]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 2233,
+      "completion_tokens": 158
+    },
+    {
+      "id": "5add15d15542994ed6169c70",
+      "question": "Socialist conferences were held with what countries that opposed the Central Powers in the First World War?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Action 3: Finish[Various individuals and organizations from different nations participated in socialist conferences like the Zimmerwald Conference, focusing on working-class unity, peace without annexations or reparations, and promoting socialist revolutions to establish a new international socialist movement.]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 4467,
+      "completion_tokens": 186
+    },
+    {
+      "id": "5ae1465855429920d5234373",
+      "question": "Berk Communication and Marketing Group  best known for representing an American professional baseball pitcher for what team?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question-answering task using alternating Thought, Action, and Observation steps:\n\n- Thought: Reason about the current situation.\n- Action: Can be one of these three types:\n  1. Search[entity]: Search for the specified entity online. If it exists, return its first paragraph; if not, return some similar entities for further search.\n  2. Lookup[keyword]: From the last successfully found paragraph through Search, return the next sentence containing the specified keyword.\n  3. Finish[answer]: Return the final answer and end the task.\n\n- You can take as many steps as needed.\n\nQuestion:  "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Finish[New York Yankees]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 1878,
+      "completion_tokens": 338
+    }

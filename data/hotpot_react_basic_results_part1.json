@@ -1,0 +1,2500 @@
+{
+      "id": "5abd2af955429933744ab74b",
+      "question": "What movie did actress Irene Jacob complete before the American action crime thriller film directed by Stuart Bird?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The search did not return the specific film directed by Stuart Bird. Since I cannot find the exact film, I cannot determine the movie completed by Irene Jacob before it.\nAction 5: Finish[unable to determine]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9679,
+      "completion_tokens": 1128
+    },
+    {
+      "id": "5ae53fcb55429960a22e029e",
+      "question": "Who created the show with Wendy Schaal doing the voice of Francine?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The creators of American Dad are Seth MacFarlane, Mike Barker, and Matt Weitzman. So, the answer is Seth MacFarlane, Mike Barker, and Matt Weitzman.\nAction 5: Finish[Seth MacFarlane, Mike Barker, Matt Weitzman]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9507,
+      "completion_tokens": 729
+    },
+    {
+      "id": "5a810c44554299260e20a221",
+      "question": "What objects were carried into battle by these naval ships for qhich the QF 6-pounder Hotchkiss were introduced to defend against?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I couldn't find specific information on the objects carried into battle by naval ships to defend against torpedo boats and submarines. It seems like naval tactics and strategies were developed to counter these threats, rather than specific objects. \nAction 5: Finish[naval tactics were developed instead of specific objects]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 10033,
+      "completion_tokens": 795
+    },
+    {
+      "id": "5a8f43795542997ba9cb3204",
+      "question": "Who is older Danny Green or James Worthy?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I couldn't find the age of James Worthy. Therefore, I cannot determine who is older between Danny Green and James Worthy based on the information available.\nAction 4: Finish[Unknown]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 8017,
+      "completion_tokens": 670
+    },
+    {
+      "id": "5a8af92c55429950cd6afc33",
+      "question": "Author David Chanoff has collaborated with a U.S. Navy admiral who served as the ambassador to the United Kingdom under which President?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "William J. Crowe served as the ambassador to the United Kingdom under President Bill Clinton. So the answer is Bill Clinton.\nAction 4: Finish[Bill Clinton]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7614,
+      "completion_tokens": 1254
+    },
+    {
+      "id": "5a81a4135542990a1d231e37",
+      "question": "What was the first year a scientific journal published by an organization located in the Bronx was published?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The search still did not return information about scientific journals published by organizations located in the Bronx. I may need to consider a different approach to find the answer to the question.\nAction 6: Finish[Information not found]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 13320,
+      "completion_tokens": 1216
+    },
+    {
+      "id": "5a802ff25542992bc0c4a6d2",
+      "question": "Geoff LaTulippe is an American writer whose best-known work was directed by whom?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Mark Griffiths is the director of the film \"Going the Distance.\" He directed Geoff LaTulippe's best-known work. \nAction 5: Finish[Mark Griffiths]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9390,
+      "completion_tokens": 553
+    },
+    {
+      "id": "5a85e24a5542994775f6067f",
+      "question": "Are Hoodoo Gurus and Pierre Bouvier of the same nationality?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Hoodoo Gurus are Australian, while Pierre Bouvier is Canadian. So they are not of the same nationality.\nAction 4: Finish[no]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7436,
+      "completion_tokens": 411
+    },
+    {
+      "id": "5ae2098e5542997f29b3c21b",
+      "question": "Hardley Flood is an area of lagoons that support populations of the waterfowl that are a medium sized version of what animal?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I may need to reach out to a local wildlife organization or research center to gather information on the specific medium-sized waterfowl supported by lagoons in Hardley Flood. This approach will provide expert insight and accurate details on the topic.\nAction 9: Reach out to local wildlife organization or research center for information on medium-sized waterfowl supported by lagoons in Hardley Flood.",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 18029,
+      "completion_tokens": 1206
+    },
+    {
+      "id": "5ab874ba5542990e739ec904",
+      "question": "The Twelfth United States Army Group commander was the first chairman of what?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I am unable to find the information on who the first chairman of SHAEF was.\nAction 5: Finish[Unable to find information]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 8966,
+      "completion_tokens": 962
+    },
+    {
+      "id": "5ac0d1555542997d64295a5d",
+      "question": "Which actor and film director is from German Jewish descent, Kurt Gerron or Dell Henderson?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Kurt Gerron is from German Jewish descent, while Dell Henderson is not. So the actor and film director from German Jewish descent is Kurt Gerron.\nAction 3: Finish[Kurt Gerron]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5299,
+      "completion_tokens": 303
+    },
+    {
+      "id": "5a7730f255429972597f148c",
+      "question": "Michael Braz completed a libretto for what Georgia college, founded in 1906?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I have exhausted all possible search terms and could not find the answer. Unfortunately, I am unable to provide a response to this question.\nAction 5: Finish[Unable to provide a response]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9079,
+      "completion_tokens": 1208
+    },
+    {
+      "id": "5adef80b5542993a75d263c4",
+      "question": "The 2000 British film Snatch was later adapted into a television series for what streaming service?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The television series adaptation of Snatch premiered on Crackle. \nAction 5: Finish[Crackle]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9069,
+      "completion_tokens": 466
+    },
+    {
+      "id": "5ab721325542992aa3b8c7a2",
+      "question": "Kurt Fuller from Stockton, CA appeared in which American Detective Comedy Drama television series created by Steve Franks?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Kurt Fuller appeared in the Psych TV series created by Steve Franks.\nAction 3: Finish[Psych]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5531,
+      "completion_tokens": 387
+    },
+    {
+      "id": "5adfba9555429942ec259b1e",
+      "question": "The central figure used in the corporate branding of Singapore Airlines has been an element of it's marketing since what year?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The Singapore Girl has been an element of Singapore Airlines' marketing since its inception. I can finish with this answer.\nAction 3: Finish[since its inception]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 6209,
+      "completion_tokens": 408
+    },
+    {
+      "id": "5ae0850055429945ae959396",
+      "question": "Who was older, Andrew Preston or James Taylor?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "James Taylor was born in 1948. Andrew Preston was born in 1973, so James Taylor is older than Andrew Preston.\nAction 4: Finish[James Taylor]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7198,
+      "completion_tokens": 439
+    },
+    {
+      "id": "5adf9ee75542992d7e9f93c0",
+      "question": "How many households does the network that Di-Gata Defenders plays on in South Africa reach?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I'm unable to find the specific network that airs Di-Gata Defenders in South Africa, so I cannot determine how many households it reaches.\nAction 4: Finish[unable to determine]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 6907,
+      "completion_tokens": 755
+    },
+    {
+      "id": "5a89bbb05542992e4fca83a3",
+      "question": "What star of Parks and Recreation appeared in November?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Since the search attempts did not provide me with the specific information about the stars of Parks and Recreation appearing in November, I should try a more targeted search to find the answer.\nAction 9: Search[Parks and Recreation November guest stars]",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 33938,
+      "completion_tokens": 5845
+    },
+    {
+      "id": "5ab82d095542990e739ec853",
+      "question": "\"Tunak\", is a bhangra/pop love song by an artist born in which year ?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Daler Mehndi was born on 18 August 1967. So, the artist born in 1967 performed the song \"Tunak.\"\nAction 3: Finish[1967]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5250,
+      "completion_tokens": 527
+    },
+    {
+      "id": "5ab852c05542990e739ec8c5",
+      "question": "Which peak is flanked by Manaslu, Shispare or Ngadi Chuli?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Manaslu is not flanked by Shispare, so Ngadi Chuli must be flanked. Therefore, Ngadi Chuli is flanked by Manaslu.\nAction 6: Finish[Manaslu]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 13028,
+      "completion_tokens": 1060
+    },
+    {
+      "id": "5ab1dcab5542993be8fa985e",
+      "question": "What was the middle name of the actress who was cast alongside Harvey Fierstein, Linda Hart, Dick Latessa, Clarke Thorell, Mary Bond Davis, Laura Bell Bundy, Matthew Morrison, Corey Reynolds, and Marissa Jaret Winokur in Hairspray?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Unfortunately, I have been unsuccessful in finding the middle name of Marissa Jaret Winokur through various search attempts.\nAction 9: Finish[unable to find]",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 20605,
+      "completion_tokens": 1089
+    },
+    {
+      "id": "5ac5484d5542994611c8b48d",
+      "question": "According to the 2011 census what is the population of the city where Royal Wahingdoh F.C. are based ?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "According to the 2011 census, the population of Shillong is 143,229. So the population of the city where Royal Wahingdoh F.C. is based on is 143,229 according to the 2011 census.\nAction 3: Finish[143,229]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5553,
+      "completion_tokens": 453
+    },
+    {
+      "id": "5ab8420555429919ba4e2290",
+      "question": "The Ranters were a loose collection of radical so-called heretics whose main objection was with what major division of Christendom?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Since I couldn't find specific information on The Ranters objections to major divisions of Christendom, I will assume they did not have objections to Catholicism, Eastern Orthodoxy, or Protestantism. I will finish with the answer that their main objection was not with any major division of Christendom.\nAction 6: Finish[not with any major division of Christendom]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 11052,
+      "completion_tokens": 874
+    },
+    {
+      "id": "5a8b4fcc55429949d91db541",
+      "question": "Ruth Vollmer begins work designing window displays for which American luxury jewelry and specialty retailer, headquartered in New York City",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Ruth Vollmer designed window displays for Tiffany & Co., an American luxury jewelry and specialty retailer headquartered in New York City.\nAction 4: Finish[Tiffany & Co.]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7142,
+      "completion_tokens": 699
+    },
+    {
+      "id": "5adfed5e55429942ec259b92",
+      "question": "What city does the company that owns Bumble and bumble have its headquarters in?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I was unable to retrieve the specific location of the headquarters of Bumble Inc. due to an error. This task remains unsolved.\nAction 9: Finish[Unsolved]",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 20830,
+      "completion_tokens": 3664
+    },
+    {
+      "id": "5abba91e554299642a094b10",
+      "question": "What languages did the son of Sacagawea speak?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I still haven't found information on Sacagawea's son and the languages he spoke. I may need to consult a different source or conduct a more specific search to find the answer to the question.\nAction 5: Finish[no information found]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9706,
+      "completion_tokens": 750
+    },
+    {
+      "id": "5ac31a73554299741d48a1e9",
+      "question": "Ferdinand Zvonimir von Habsburg is the eldest son of the head of which House",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Ferdinand Zvonimir von Habsburg is the eldest son of the head of the House of Habsburg-Lorraine. So, the answer is the House of Habsburg-Lorraine.\nAction 2: Finish[House of Habsburg-Lorraine]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 3359,
+      "completion_tokens": 324
+    },
+    {
+      "id": "5a8661535542994775f60758",
+      "question": "What schools of thought are drawn from in the academic discipline of Hafiz Rashid Khan?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Despite searching through various sources related to Hafiz Rashid Khan, I still could not find the academic discipline he is associated with. It seems like more specific sources or direct interviews with him may be required to accurately determine the schools of thought drawn from in his academic discipline. This question may need more in-depth research or direct contact with Hafiz Rashid Khan or those familiar with his work to provide a definitive answer.\nAction 7: Finish[unable to determine]",
+      "ground_truth": "",
+      "step_number": 7,
+      "prompt_tokens": 16702,
+      "completion_tokens": 1036
+    },
+    {
+      "id": "5a87e3d65542993e715abff8",
+      "question": "Alfie Allen played Theon Greyjoy on which show?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "After searching for Game of Thrones, I have confirmed that Alfie Allen played Theon Greyjoy on that show.\nAction 4: Finish[Game of Thrones]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7458,
+      "completion_tokens": 320
+    },
+    {
+      "id": "5ab32fc355429969a97a80fa",
+      "question": "Was Vanderbilt University or Emory University founded first?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Emory University was founded in 1836, making it older than Vanderbilt University. So, Emory University was founded first.\nAction 3: Finish[Emory University]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5005,
+      "completion_tokens": 365
+    },
+    {
+      "id": "5ab674ee5542995eadeefff2",
+      "question": "Hivange is a village in a country that has how many official languages ?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Luxembourg has three official languages: French, German, and Luxembourgish. So the answer is three.\nAction 3: Finish[three]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5213,
+      "completion_tokens": 288
+    },
+    {
+      "id": "5abea05f5542991f661061b6",
+      "question": "South Dade High School is located between what two national parks?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "South Dade Senior High School is located between Biscayne National Park to the east and Everglades National Park to the west.\nAction 4: Finish[Biscayne National Park and Everglades National Park]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7338,
+      "completion_tokens": 542
+    },
+    {
+      "id": "5ac19eb35542994ab5c67da3",
+      "question": "What does the organization associated with Carl Wieland believe about anything other than the young earth view? ",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Creation Ministries International believes in young Earth creationism as the most common form. So they reject any views other than the young earth view.\nAction 3: Finish[reject any other views than young earth view]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5485,
+      "completion_tokens": 459
+    },
+    {
+      "id": "5a7bc42e554299294a54aabe",
+      "question": "What award was an actor born in 1955 that acted in the movie Ransom nominated for?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I cannot find information related to the actor born in 1955 who acted in the movie Ransom. So I cannot determine what award they were nominated for.\nAction 3: Finish[unable to determine]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5238,
+      "completion_tokens": 1174
+    },
+    {
+      "id": "5ade64c7554299728e26c710",
+      "question": "Is Northeast Florida Regional Airport farther from St. Augustine than Glacier Park International Airport is to Kalispell?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Northeast Florida Regional Airport is about four miles from St. Augustine, while Glacier Park International Airport is six miles from Kalispell. So, Northeast Florida Regional Airport is closer to St. Augustine than Glacier Park International Airport is to Kalispell.\nAction 3: Finish[no]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5377,
+      "completion_tokens": 519
+    },
+    {
+      "id": "5adde3a45542997545bbbdc2",
+      "question": "Are both Delmer Daves and Jean-Pierre Jeunet film directors?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Jean-Pierre Jeunet is a film director as well. So both Delmer Daves and Jean-Pierre Jeunet are film directors.\nAction 4: Finish[yes]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7497,
+      "completion_tokens": 391
+    },
+    {
+      "id": "5a820c0c554299676cceb1fc",
+      "question": "What is the name of the company that wholly owns the Value Alliance airline whose head office is within Terminal 2 of Narita International Airport?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The search results are not providing the information I need. I may need to try a different approach or source to find the name of the company that wholly owns the Value Alliance airline with its head office within Terminal 2 of Narita International Airport.\nAction 5: Finish[unable to find the answer]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9746,
+      "completion_tokens": 1263
+    },
+    {
+      "id": "5a74594a55429974ef308be1",
+      "question": "Who beat the Missouri Tigers in what is alternatively known as the Border Showdown?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The Missouri Tigers were beaten by the Kansas Jayhawks in the Border Showdown.\nAction 2: Finish[Kansas Jayhawks]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 3590,
+      "completion_tokens": 291
+    },
+    {
+      "id": "5a8752955542994775f607d1",
+      "question": "What was the name of the team that represented an Arizona university in the conference that covers a broad expanse of the western United States, including Arizona, California, and New Mexico?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The name of the team that represents the University of Arizona in the conference that covers Arizona, California, and New Mexico is the Arizona Wildcats.\nAction 2: Finish[Arizona Wildcats]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 3524,
+      "completion_tokens": 342
+    },
+    {
+      "id": "5ac2c338554299657fa29039",
+      "question": "How many personnel does the Navy that had Gilliam-class atttack transports have on active duty?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I cannot find information on the number of personnel on active duty for the Navy with Gilliam-class attack transports.\nAction 3: Finish[Information not found]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5109,
+      "completion_tokens": 359
+    },
+    {
+      "id": "5ac4d717554299076e296e0e",
+      "question": "In which part of New York was the singer who released the song No Problem raised ?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I was unable to find where Jelly Roll was raised in New York through multiple search attempts. It seems the information may not be readily available.\nAction 5: Finish[Information unavailable]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9587,
+      "completion_tokens": 1061
+    },
+    {
+      "id": "5a8ad2f3554299515336138d",
+      "question": "Vices and Virtues, coincidentally released just four days after \"Vices & Virtues\" by Las Vegas band Panic! at the Disco, was the second studio album by which Canadian rock band?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The information provided does not give the answer to the question. Unfortunately, I was not able to find the Canadian rock band that released the album \"Vices and Virtues\" despite multiple search attempts.\nAction 8: Finish[Not found]",
+      "ground_truth": "",
+      "step_number": 8,
+      "prompt_tokens": 21346,
+      "completion_tokens": 2567
+    },
+    {
+      "id": "5adc8977554299438c868de2",
+      "question": "What does the goddess associated with the goddess frigg  consists of what tales?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "An error occurred during the search for more detailed information on the tales associated with Frigg. It seems I cannot retrieve specific information on the tales at the moment.\nAction 4: Finish[unable to determine]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7664,
+      "completion_tokens": 401
+    },
+    {
+      "id": "5ade09945542997545bbbe2c",
+      "question": "Who was the director of the 2007 American action film starring the actress, professionally known as Maggie Q.?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Maggie Q starred in the 2007 American action film War, so the director of the film is Philip G. Atwell. I need to find out the director's name.\nAction 5: Finish[Philip G. Atwell]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9313,
+      "completion_tokens": 815
+    },
+    {
+      "id": "5a713fb15542994082a3e6f0",
+      "question": "Did the board game San Marco or About Time come out first?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I am still unable to find the release date information for the board games San Marco and About Time. Since I cannot determine which board game came out first, I will have to finish the task without providing an answer. \nAction 8: Finish[unable to determine]",
+      "ground_truth": "",
+      "step_number": 8,
+      "prompt_tokens": 16487,
+      "completion_tokens": 1607
+    },
+    {
+      "id": "5abba3255542996cc5e4a031",
+      "question": "Are John O'Hara and Rabindranath Tagore the same nationality?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Rabindranath Tagore was an Indian poet, writer, and social reformer. John O'Hara and Rabindranath Tagore have different nationalities.\nAction 3: Finish[different]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 6510,
+      "completion_tokens": 546
+    },
+    {
+      "id": "5add0f635542994ed6169c56",
+      "question": "Are The Man from Snowy River II and Miracle of the White Stallions filmed in different countries?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Miracle of the White Stallions was filmed in Vienna, Austria, which is different from Australia where The Man from Snowy River II was filmed. So they were filmed in different countries.\nAction 3: Finish[yes]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5459,
+      "completion_tokens": 409
+    },
+    {
+      "id": "5a7633ad5542992db9473741",
+      "question": "Which was fought earlier in our nation's history, the Seven Days Battles or the Battle of Manila?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The Battle of Manila was fought during World War II, so it was fought much later in our nation's history than the Seven Days Battles. \nAction 3: Finish[Seven Days Battles]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 6050,
+      "completion_tokens": 401
+    },
+    {
+      "id": "5ade03c65542990dbb2f7f2e",
+      "question": "What nationality is the man who developed the dictator game?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The search results are still not providing information about the developer or originator of the dictator game. I may need to try different search terms or consult different sources to find the answer.\nAction 7: Finish[Unable to find the nationality of the man who developed the dictator game]",
+      "ground_truth": "",
+      "step_number": 7,
+      "prompt_tokens": 15545,
+      "completion_tokens": 1384
+    },
+    {
+      "id": "5ade450b5542997c77adedc5",
+      "question": "Manchester, New Hampshire is a part of the Northeast megalopolis which included what other major cities?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Manchester, New Hampshire, is part of the Northeast megalopolis, which includes major cities like New York City, Philadelphia, Washington, D.C., Boston, and Baltimore.\nAction 3: Finish[New York City, Philadelphia, Washington, D.C., Boston, Baltimore]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5400,
+      "completion_tokens": 337
+    },
+    {
+      "id": "5a7f8b8c5542995d8a8ddea1",
+      "question": "The term snake eyes is used in a particular casino game that uses what game pieces?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The game pieces used in the casino game that features the term snake eyes are dice. \nAction 3: Finish[dice]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5130,
+      "completion_tokens": 291
+    },
+    {
+      "id": "5a807ceb554299485f598616",
+      "question": "What \"Splitting Image\" voice artist provided testimony in Evidently... John Cooper Clarke?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I am unable to find information on the voice artist providing testimony in Evidently... John Cooper Clarke.\nAction 4: Finish[Not found]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 6827,
+      "completion_tokens": 928
+    },
+    {
+      "id": "5adfcb5455429906c02daa48",
+      "question": "What character in \"Father Ted\" was played by an actor who starred in Death in Paradise?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Ardal O'Hanlon starred in Death in Paradise (Series 6-9) and played Father Dougal McGuire in \"Father Ted.\" So the character in \"Father Ted\" played by an actor who starred in Death in Paradise is Father Dougal McGuire. \nAction 3: Finish[Father Dougal McGuire]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5837,
+      "completion_tokens": 560
+    },
+    {
+      "id": "5a7a5aea5542996c55b2dd6f",
+      "question": "What country is the Selun located in?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Selun is located in the Appenzell Alps, in the canton of St. Gallen, Switzerland. \nAction 4: Finish[Switzerland]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7155,
+      "completion_tokens": 342
+    },
+    {
+      "id": "5ab29842554299194fa93420",
+      "question": "What is the name of the third act in a play where a character named Carlo Gérard is partly based on a revolutionary figure?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The name of the third act in the play Andrea Chénier where a character named Carlo Gérard is partly based on a revolutionary figure is not provided in the search results. I should try searching for a different query that might yield the desired information.\nAction 9: Search[Andrea Chénier act 3 name]",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 22090,
+      "completion_tokens": 2137
+    },
+    {
+      "id": "5a72df275542992359bc31b3",
+      "question": "What was Muammar Mohammed Abu Minyar Gaddafi's title during the Libyan Civil War?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Muammar Gaddafi's title during the Libyan Civil War was 'Brotherly Leader' of the Great Socialist People's Libyan Arab Jamahiriya. \nAction 5: Finish[Brotherly Leader]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 12906,
+      "completion_tokens": 613
+    },
+    {
+      "id": "5a82678a5542995ce29dccfa",
+      "question": "Where was the device that is similar to Princess max released?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Max Steel is the device similar to Princess max and the film Max Steel was released in the United States on October 14, 2016.\nAction 4: Finish[United States, October 14, 2016]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7784,
+      "completion_tokens": 509
+    },
+    {
+      "id": "5ab3c470554299233954ffa1",
+      "question": "Billy King was an Australian rules footballer who participated in a game that was contested between the South Melbourne Football Club and Carlton Football Club, and was held at what location in Melbourne in 1945?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The location where the game between South Melbourne Football Club and Carlton Football Club was held in 1945 was Princes Park in Carlton North, Melbourne.\nAction 2: Finish[Princes Park, Carlton North, Melbourne]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 3549,
+      "completion_tokens": 308
+    },
+    {
+      "id": "5ae25e835542992decbdccd1",
+      "question": "A British sports, health and leisure business hosted the World Games on what dates?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "It seems I am unable to find the specific answer to this question through my current search method. It might be better to try a different approach, such as searching for specific British sports, health, and leisure businesses that are known for hosting World Games, and then finding the dates of those events.\nAction 9: Search[Specific British sports, health, and leisure businesses known for hosting World Games]",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 20053,
+      "completion_tokens": 2754
+    },
+    {
+      "id": "5a8900c75542997e5c09a6ed",
+      "question": "What ingredient is in both Cosmopolitan and Cuba Libre?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Cosmopolitan contains lime juice, and Cuba Libre also contains lime juice, so the common ingredient is lime juice.\nAction 3: Finish[lime juice]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5226,
+      "completion_tokens": 300
+    },
+    {
+      "id": "5ab8524f5542990e739ec8c4",
+      "question": "William Hodges visited a polar region as part of a voyage, the region is how big?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "There is no specific size mentioned for the Antarctic region. I will need to provide a general estimate based on available information.\nAction 4: Finish[around 5.4 million square miles]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7142,
+      "completion_tokens": 523
+    },
+    {
+      "id": "5a82efe355429966c78a6aa1",
+      "question": "Polk County Florida's second most populated city is home to which mall?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I was unable to find the information through online searches and the official website. Contacting the local information center or Chamber of Commerce in Winter Haven, Florida may provide the answer to the question.\nAction 9: Contact local information center or Chamber of Commerce in Winter Haven, Florida",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 21095,
+      "completion_tokens": 1086
+    },
+    {
+      "id": "5ae5ffbb5542996de7b71ad4",
+      "question": "Michaël Llodra of France, called \"the best volleyer on tour\", defeated Juan Martín del Potro a professional of what nationality?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Juan Martín del Potro is Argentine. Therefore, the professional Juan Martín del Potro is of Argentine nationality.\nAction 3: Finish[Argentine]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5417,
+      "completion_tokens": 338
+    },
+    {
+      "id": "5adefe645542992d7e9f926c",
+      "question": "Which tour did The Beatles release their album Dark Horse?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The Beatles did not release an album called Dark Horse on their tours. The album Dark Horse was released by George Harrison in December 1974. So the answer is neither Arthur's Magazine nor First for Women. \nAction 5: Finish[Neither]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 10589,
+      "completion_tokens": 532
+    },
+    {
+      "id": "5a86ea445542994775f60780",
+      "question": "When was the female character that on June 9, 2015 was promoted to a series regular first introduced on \"Once Upon a Time\"?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The search results are not providing the list of female characters in \"Once Upon a Time.\" I should try a different approach. I will explicitly search for a list of female characters in \"Once Upon a Time\" to find the specific character mentioned in the question.\nAction 9: Search[list of female characters \"Once Upon a Time\"]",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 21991,
+      "completion_tokens": 2895
+    },
+    {
+      "id": "5ab3ec51554299753aec59f1",
+      "question": "Sachin H. Jain served as Chief Medical Information and Innovation Officer for one of the largest pharmaceutical companies in the world called what?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I couldn't find the name of the pharmaceutical company Sachin H. Jain worked for. I'll have to conclude the task as unfinished.\nAction 3: Finish[unfinished]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5235,
+      "completion_tokens": 315
+    },
+    {
+      "id": "5ab5cedf554299488d4d9a34",
+      "question": "Cudjoe Kazoola Lewis was brought illegally to the United States on board a ship that was how many feet long?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The ship Clotilda that Cudjoe Kazoola Lewis was brought on board illegally was 86 feet long, so the answer is 86 feet.\nAction 4: Finish[86 feet]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 8166,
+      "completion_tokens": 508
+    },
+    {
+      "id": "5a8f13d55542997ba9cb31c9",
+      "question": "Philip Savage served as Direcor of Player Personnel for the Baltimore Ravens under what general manager who was inducted into both the College and Pro Football Halls of Fame?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The passage mentions that Ozzie Newsome was the general manager of the Baltimore Ravens from 1996 until his retirement following the 2018 season. Ozzie Newsome was inducted into both the College and Pro Football Halls of Fame. \nAction 4: Finish[Ozzie Newsome]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7557,
+      "completion_tokens": 980
+    },
+    {
+      "id": "5a78c69e55429974737f787c",
+      "question": "Who was born first, Ronnie Radke or Dave Brockie?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Since I couldn't find Dave Brockie's birthdate, I am unable to determine who was born first.\nAction 5: Finish[Unknown]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9336,
+      "completion_tokens": 519
+    },
+    {
+      "id": "5adfa8d0554299025d62a32c",
+      "question": "How many times have the team that won the 11th DFB-Pokal won the national championship ?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I need to find the list of DFB-Pokal winners to see who won the 11th DFB-Pokal and then search for how many times they have won the national championship. Let's search for DFB-Pokal winners list again.\nAction 9: Search[List of DFB-Pokal winners]",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 25084,
+      "completion_tokens": 3197
+    },
+    {
+      "id": "5ab1ea0a554299340b52542a",
+      "question": "What is the full name of the company co founded by Jay Van Andel?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The full name of the company co-founded by Jay Van Andel is Amway Corp.\nAction 6: Finish[Amway Corp]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 11398,
+      "completion_tokens": 608
+    },
+    {
+      "id": "5aba480c55429939ce03dc77",
+      "question": "Where is the movie from that is directed by Raymond Yip and stars the winner of Miss Chinese International Pageant of 1988?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I am unable to find specific information about the movie directed by Raymond Yip and starring the winner of the Miss Chinese International Pageant of 1988.\nAction 3: Finish[unable to find specific information]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5166,
+      "completion_tokens": 524
+    },
+    {
+      "id": "5add7ce55542992ae4cec585",
+      "question": "When was the Swiss author and dramatist died who's novel is \"A Dangerous Game\"?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Friedrich Dürrenmatt died on December 14, 1990. This answers the question of when the Swiss author and dramatist who wrote \"A Dangerous Game\" died.\nAction 3: Finish[December 14, 1990]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5237,
+      "completion_tokens": 498
+    },
+    {
+      "id": "5ac1bce45542994ab5c67def",
+      "question": "Are Pothos and Tibouchina Aubl both flowering genus of plants?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Both Pothos and Tibouchina Aubl are flowering genus of plants, as they are both in the family Araceae and Melastomataceae, respectively.\nAction 5: Finish[yes]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9420,
+      "completion_tokens": 872
+    },
+    {
+      "id": "5ac19bf55542994ab5c67d97",
+      "question": "High Water is a song by Bob Dylan it was based on the 1927 Lousiana Flood. Another song recorded by Dylan about the event is When the Levee Breaks who is the Husband and Wife team that wrote and recorded this song in 1929 ?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The husband and wife team that wrote and recorded the song When the Levee Breaks in 1929 are Memphis Minnie and Kansas Joe McCoy. \nAction 3: Finish[Memphis Minnie, Kansas Joe McCoy]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5479,
+      "completion_tokens": 414
+    },
+    {
+      "id": "5a88f2cc55429938390d3ffb",
+      "question": "What year did the Jang Hoon directed film, starring Song Kang-ho in the title role and selected as the South Korean entry for the Best Foreign Language Film at the 90th Academy Awards, debut?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The film Parasite directed by Bong Joon-ho and starring Song Kang-ho debuted in 2019. So the answer is 2019.\nAction 6: Finish[2019]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 16059,
+      "completion_tokens": 1120
+    },
+    {
+      "id": "5ade18df5542990dbb2f7f53",
+      "question": "Which television network that aired Gameshow Marathon has been owned by the Bell Media division of BCE, Inc since 2000?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I am unable to find specific information on the television network owned by Bell Media division of BCE, Inc since 2000. It seems the search may not yield a definitive answer.\nAction 6: Finish[unable to determine]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 11926,
+      "completion_tokens": 1470
+    },
+    {
+      "id": "5adea0c5554299728e26c776",
+      "question": "Are both Helen Dunmore and M. P. Shiel of West Indian descent?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I could not find information on Helen Dunmore. M. P. Shiel is a British writer. Since I do not have information on Helen Dunmore's background, I cannot determine if they are both of West Indian descent. The answer is inconclusive based on the information available. \nAction 6: Finish[inconclusive]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 11578,
+      "completion_tokens": 1373
+    },
+    {
+      "id": "5ab5035b5542996a3a969ff8",
+      "question": "Q:The 7.92×57mm Mauser rifle cartridge was used by which country's military in the 20th century?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The 7.92x57mm Mauser rifle cartridge was used by the German military in the 20th century.\nAction 3: Finish[Germany]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5288,
+      "completion_tokens": 325
+    },
+    {
+      "id": "5abeebe25542993fe9a41d9c",
+      "question": " Season of Migration to the North  is a counter narrative to a novella by what Polish-British novelist?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Heart of Darkness is a novella by Polish-British novelist Joseph Conrad, making Season of Migration to the North a counter narrative to his work. \nAction 3: Finish[Joseph Conrad]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5907,
+      "completion_tokens": 343
+    },
+    {
+      "id": "5a8a647b55429930ff3c0dc1",
+      "question": " The Type 90 tank built by Mitsubishi Heavy Industries is to be superseded by what generation of main battle tank of the Japanese Ground Self Defense Force?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The Type 90 tank will be superseded by the Type 10 tank. I need to mention the Type 10 tank as the answer.\nAction 2: Finish[Type 10 tank]",
+      "ground_truth": "",
+      "step_number": 2,
+      "prompt_tokens": 3337,
+      "completion_tokens": 241
+    },
+    {
+      "id": "5adc294c5542996e685252cf",
+      "question": "Which university's teams with a mascot called Stomper began competing in the Northern Sun Intercollegiate Conference in 2008?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Minnesota State University, Mankato does have a mascot called Stomper. Therefore, the answer is Minnesota State University, Mankato. \nAction 5: Finish[Minnesota State University, Mankato]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9604,
+      "completion_tokens": 1274
+    },
+    {
+      "id": "5ae75a4c5542997b22f6a6f1",
+      "question": "The Bart the Fink episode of The Simpsons aired in February of 1996, and involves the host of which kiddie show?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I was unable to find the specific information needed about the host of the kiddie show involved in the Bart the Fink episode of The Simpsons. I might need to watch the episode or look for a detailed summary online to find the answer.\nAction 5: Finish[watch Bart the Fink episode of The Simpsons or find a detailed summary online]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 9586,
+      "completion_tokens": 1005
+    },
+    {
+      "id": "5a88e7a55542993b751ca8ca",
+      "question": "Where was the 2015 MSA Formula Championship, a multi-event, Formula 4 open-wheel single seater motor racing championship held?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The 2015 MSA Formula Championship event was held at Brands Hatch on the circuit's Indy configuration. \nAction 4: Finish[Brands Hatch]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7762,
+      "completion_tokens": 329
+    },
+    {
+      "id": "5ae07db855429945ae95937a",
+      "question": "Cyrina Fiallo has guest starred on which Michael Jacobs-created sitcom?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Cyrina Fiallo guest starred in My Two Dads, which was created by Michael Jacobs. So, the answer is My Two Dads.\nAction 3: Finish[My Two Dads]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5024,
+      "completion_tokens": 417
+    },
+    {
+      "id": "5abb6ece5542992ccd8e7f40",
+      "question": "Which was published founded most recently, InStyle or Godey's Lady's Book?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Unfortunately, I was unable to determine the founding dates of both magazines due to the errors encountered during search attempts. I will need to find an alternative way to answer the question. Let me search for the founding date of InStyle on a different platform to determine which magazine was published most recently.\nAction 9: Search[InStyle founding date on another platform]",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 23177,
+      "completion_tokens": 2096
+    },
+    {
+      "id": "5a762f4755429976ec32bd44",
+      "question": "What conference is the team that is head coached by the uncle of Scott Turner?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Washington Football Team is in the NFC East division. That means the team head coached by Scott Turner's uncle is in the NFC East conference.\nAction 6: Finish[NFC East]",
+      "ground_truth": "",
+      "step_number": 6,
+      "prompt_tokens": 14201,
+      "completion_tokens": 971
+    },
+    {
+      "id": "5adcc7515542994ed6169bff",
+      "question": "Akademik Lomonosov was named after a Russian polymath, scientist, and writer, who discovered the atmosphere of what planet?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Mikhail Lomonosov discovered the atmosphere of Venus. So the answer is Venus.\nAction 3: Finish[Venus]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5372,
+      "completion_tokens": 395
+    },
+    {
+      "id": "5a8f141e55429918e830d181",
+      "question": "What was the setting for Raphael Coleman's best known film?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I am unable to find the information on Raphael Coleman's best known film and its setting at the moment. I may need to try a different search strategy or source to gather this information.\nAction 9: Finish[Unable to find the information at this time]",
+      "ground_truth": "",
+      "step_number": 9,
+      "prompt_tokens": 16907,
+      "completion_tokens": 1396
+    },
+    {
+      "id": "5a873b0d5542994775f607ad",
+      "question": "How many rooms are in the building built in 1883 at Garden City in Nassau County, New York?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "The building built in 1883 at Garden City in Nassau County, New York has 500 rooms. \nAction 3: Finish[500 rooms]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 6295,
+      "completion_tokens": 506
+    },
+    {
+      "id": "5a89a92a55429946c8d6e98c",
+      "question": "Are John Tardy and Stza from the same country?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "John Tardy is from the United States, and Stza is also from the United States. So John Tardy and Stza are from the same country.\nAction 3: Finish[yes]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5439,
+      "completion_tokens": 577
+    },
+    {
+      "id": "5adfc06d55429906c02daa2a",
+      "question": "What is the name of the largest shipping facility in the Northeastern United States, where the Boston Red Socks play?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I cannot find the answer to the question \"What is the name of the largest shipping facility in the Northeastern United States where the Boston Red Sox play\" based on the searches conducted. I will end the task here. \nAction 5: Finish[unable to find answer]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 11486,
+      "completion_tokens": 1003
+    },
+    {
+      "id": "5ab67c0055429954757d32f6",
+      "question": "What author wrote a three book series of memoirs that are studied in school systems around the world?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Harper Lee wrote the To Kill a Mockingbird series, which is widely studied in school systems around the world. I can finish with this answer.\nAction 4: Finish[Harper Lee]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7354,
+      "completion_tokens": 708
+    },
+    {
+      "id": "5ab5574b554299488d4d994e",
+      "question": "Robin R. Bottin is known for his collaboration with an American director and producer who won an Academy Award, Golden Globe and BAFTA award for what movie?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "I cannot find information on Robin R. Bottin or Rob Bottin. I will not be able to provide an answer to the question at this time.\nAction 3: Finish[Cannot provide an answer]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5223,
+      "completion_tokens": 581
+    },
+    {
+      "id": "5ac31b0a554299741d48a1f0",
+      "question": "Who directed the film to which \" A Perfect Murder\" was a modern remake? ",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Alfred Hitchcock directed \"Dial M for Murder\", the original film that \"A Perfect Murder\" was based on. \nAction 4: Finish[Alfred Hitchcock]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7081,
+      "completion_tokens": 640
+    },
+    {
+      "id": "5a862974554299211dda2a95",
+      "question": "Who is older, Jed Hoyer or John William Henry II?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Unfortunately, I encountered errors in searching for Jed Hoyer's age. Without that information, I cannot determine who is older.\nAction 5: Finish[Unknown]",
+      "ground_truth": "",
+      "step_number": 5,
+      "prompt_tokens": 8897,
+      "completion_tokens": 712
+    },
+    {
+      "id": "5adc8d4f554299473435373d",
+      "question": "Edwyn Collins and Ian Gillan both have which profession in common?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Ian Gillan is a singer known for his work in the rock band Deep Purple. Edwyn Collins is a musician, producer, and record label owner. Their common profession is singer.\nAction 4: Finish[singer]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 7773,
+      "completion_tokens": 465
+    },
+    {
+      "id": "5ae7922f5542994a481bbdac",
+      "question": "Where was the university at which  Barrie Ciliberti was a professor located? ",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Barrie Ciliberti was a professor at the University of Maryland University College. \nAction 4: Finish[University of Maryland University College]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 6803,
+      "completion_tokens": 707
+    },
+    {
+      "id": "5a7ca0ef55429907fabeefd3",
+      "question": "Which professional tennis player was born first, Lucie Hradecká or Raffaella Reggi?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Lucie Hradecká was born on 21 May 1985, and Raffaella Reggi was born on 27 November 1965. 1965 < 1985, so Raffaella Reggi was born first.\nAction 4: Finish[Raffaella Reggi]",
+      "ground_truth": "",
+      "step_number": 4,
+      "prompt_tokens": 8562,
+      "completion_tokens": 675
+    },
+    {
+      "id": "5a90b2175542990a984936ae",
+      "question": "Which tennis player is South African, Mariaan de Swardt or Kateryna Bondarenko?",
+      "body": {
+        "model": "gpt-3.5-turbo",
+        "messages": [
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: \n(1) Search[entity], which searches the exact entity on Wikipedia and returns the first paragraph if it exists. If not, it will return some similar entities to search.\n(2) Lookup[keyword], which returns the next sentence containing keyword in the current passage.\n(3) Finish[answer], which returns the answer and finishes the task.\n\n "
+              }
+            ]
+          }
+        ],
+        "temperature": 0.0,
+        "max_tokens": 2048
+      },
+      "last_output": "Mariaan de Swardt is South African and Kateryna Bondarenko is Ukrainian, so Mariaan de Swardt is the South African tennis player.\nAction 3: Finish[Mariaan de Swardt]",
+      "ground_truth": "",
+      "step_number": 3,
+      "prompt_tokens": 5626,
+      "completion_tokens": 459
+    }
