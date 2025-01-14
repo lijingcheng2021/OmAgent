@@ -154,4 +154,5 @@ video_cache/
 *.db
 
 # vscode
-.vscode
+.vscodedata/*
+data/
