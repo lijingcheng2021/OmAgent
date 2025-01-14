@@ -1,5 +1,8 @@
 import os
 import math
+import time
+import signal
+from functools import partial
 
 # 设置代理环境变量
 os.environ['HTTP_PROXY'] = 'http://10.8.21.200:47890'
@@ -47,22 +50,37 @@ def process_results(results, dataset_name="aqua"):
     }
     
     for result in results:
-        output_data = result.get('output', {})
-        
-        model_result = {
-            "id": output_data.get('id'),
-            "question": output_data.get('query'),
-            "body": output_data.get('body', {}),
-            "last_output": output_data.get('output', ''),
-            "ground_truth": "",
-            "step_number": output_data.get('step_number', 0),
-            "prompt_tokens": output_data.get('token_usage', {}).get('prompt_tokens', 0),
-            "completion_tokens": output_data.get('token_usage', {}).get('completion_tokens', 0)
-        }
-        
-        formatted_output["model_result"].append(model_result)
+        # Skip None results or invalid entries
+        if result is None:
+            print("Warning: Skipping None result")
+            continue
+            
+        try:
+            output_data = result.get('output', {})
+            
+            model_result = {
+                "id": output_data.get('id'),
+                "question": output_data.get('query'),
+                "body": output_data.get('body', {}),
+                "last_output": output_data.get('output', ''),
+                "ground_truth": "",
+                "step_number": output_data.get('step_number', 0),
+                "prompt_tokens": output_data.get('token_usage', {}).get('prompt_tokens', 0),
+                "completion_tokens": output_data.get('token_usage', {}).get('completion_tokens', 0)
+            }
+            
+            formatted_output["model_result"].append(model_result)
+        except Exception as e:
+            print(f"Warning: Error processing result: {e}")
+            continue
     
     return formatted_output
+
+class TimeoutError(Exception):
+    pass
+
+def timeout_handler(signum, frame):
+    raise TimeoutError("Processing took too long!")
 
 logging.init_logger("omagent", "omagent", level="INFO")
 
@@ -93,8 +111,12 @@ workflow >> react_workflow
 workflow.register(overwrite=True)
 
 # 设置参数
-input_file = "/home/li_jingcheng/项目/OmAgent/data/gsm8k_test.jsonl"
-num_splits = 3  # 设置要切分的份数
+input_file = "/home/li_jingcheng/项目/OmAgent/data/hotpot_dev_select_500_data_test_0107.jsonl"
+num_splits = 20  # 设置要切分的份数
+
+# 创建输出目录
+output_dir = "/home/li_jingcheng/项目/OmAgent/data/hotpot_gpt3.5_react_promptv1"
+os.makedirs(output_dir, exist_ok=True)
 
 # 读取并切分输入数据
 input_texts = read_input_texts(input_file)
@@ -108,50 +130,84 @@ config_path = CURRENT_PATH.joinpath('configs')
 #     workers=[]  # React workflow 不需要额外的 workers
 # )
 
-# 按顺序处理每一份数据
-for i, split_data in enumerate(data_splits, 1):
-    print(f"\nProcessing split {i}/{num_splits}...")
-    if i in []:
-        continue
+for j in range(10):
+    # 按顺序处理每一份数据
+    for i, split_data in enumerate(data_splits, 1):
+        try:
+            print(f"\nProcessing split {i}/{num_splits}...")
+            if i in []:
+                continue
 
-    programmatic_client = ProgrammaticClient(
-    processor=workflow,
-    config_path=config_path,
-    workers=[]  # React workflow 不需要额外的 workers
-)
-    
-    # 准备输入数据
-    workflow_input_list = [
-        {"query": text[0], "id": text[1]} for text in split_data
-    ]
+            # 检查已处理的文件
+            output_file = os.path.join(output_dir, f"hotpot_gpt3.5_react_promptv1_part{i}.json")
+            if os.path.exists(output_file):
+                with open(output_file, 'r', encoding='utf-8') as f:
+                    formatted_results = json.load(f)
+                if len(formatted_results["model_result"]) > 10:
+                    print(f"Split {i} already processed, skipping...")
+                    continue
 
-#     workflow_input_list = [
-#   {
-#     "query": "毛泽东的出生日期",
-#     "id": "5a7cfb2755429907fabef084"
-#   }
-# ]
-    
-    print(f"Processing {len(workflow_input_list)} queries in this split...")
-    
-    # 处理数据
-    res = programmatic_client.start_batch_processor(
-        workflow_input_list=workflow_input_list
-    )
-    
-    # 处理结果
-    formatted_results = process_results(res, dataset_name="aqua")
-    
-    # 保存结果到文件
-    output_file = f"/home/li_jingcheng/项目/OmAgent/data/gsm8k_gpt-3.5-turbo_react_promptv1_111_part{i}.json"
-    #output_file = f"/home/li_jingcheng/项目/OmAgent/data/debug.json"
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(formatted_results, f, ensure_ascii=False, indent=2)
-    
-    print(f"Results for split {i} saved to {output_file}")
+            programmatic_client = ProgrammaticClient(
+                processor=workflow,
+                config_path=config_path,
+                workers=[]
+            )
+            
+            # 准备输入数据
+            workflow_input_list = [
+                {"query": text[0], "id": text[1]} for text in split_data
+            ]
+            
+            print(f"Processing {len(workflow_input_list)} queries in this split...")
+            
+            # 设置超时信号处理
+            signal.signal(signal.SIGALRM, timeout_handler)
+            signal.alarm(250)  # 设置超时时间
+            
+            try:
+                # 处理数据
+                res = programmatic_client.start_batch_processor(
+                    workflow_input_list=workflow_input_list
+                )
+                
+                # 处理结果
+                formatted_results = process_results(res, dataset_name="aqua")
+                
+                # 关闭超时警报
+                signal.alarm(0)
+                
+            except TimeoutError:
+                print(f"Processing split {i} timed out after 10 minutes, skipping...")
+                programmatic_client.stop_processor()
+                time.sleep(10)
+                continue
+            except Exception as e:
+                print(f"Error during processing: {e}")
+                programmatic_client.stop_processor()
+                time.sleep(10)
+                continue
+            finally:
+                # 确保关闭超时警报
+                signal.alarm(0)
 
-    programmatic_client.stop_processor()
+            if not formatted_results["model_result"]:
+                print(f"No results for split {i}, skipping...")
+                programmatic_client.stop_processor()
+                time.sleep(10)
+                continue    
+            
+            # 保存结果到文件
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(formatted_results, f, ensure_ascii=False, indent=2)
+            
+            print(f"Results for split {i} saved to {output_file}")
 
+            programmatic_client.stop_processor()
+            time.sleep(10)
 
+        except Exception as e:
+            print(f"Error processing split {i}: {e}")
+            time.sleep(30)  # 错误后等待更长时间
+            continue
 
-print("\nAll splits processed successfully!")
+    print("\nAll splits processed successfully!")

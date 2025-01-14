@@ -1,3 +1,6 @@
 scenedetect[opencv]>=0.6.2
 pydub>=0.25.1
 face_recognition
+wikipedia==1.4.0
+langchain==0.3.13
+langchain-community==0.3.13

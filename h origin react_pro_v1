@@ -1,0 +1,17 @@
+[33mcommit 3280517719bcb7a42b72f45879bf2d47458323f0[m[33m ([m[1;36mHEAD -> [m[1;32mreact_pro_v1[m[33m)[m
+Author: lijingcheng2021 <lijingcheng2021@gmail.com>
+Date:   Fri Jan 10 07:23:24 2025 +0000
+
+    docs: simplify React README config section
+
+[33mcommit ea38565eb28e439c43b9cb9a62551aa8599cfaf6[m
+Author: lijingcheng2021 <lijingcheng2021@gmail.com>
+Date:   Fri Jan 10 07:16:57 2025 +0000
+
+    docs: update READMEs for React and React Pro to match actual implementation
+
+[33mcommit 258d27127669020cc3b6b98ede602260c78af6ea[m[33m ([m[1;31morigin/react_pro_v1[m[33m)[m
+Author: lijingcheng2021 <lijingcheng2021@gmail.com>
+Date:   Fri Jan 10 01:23:57 2025 +0000
+
+    fix: update batch test and action implementation
