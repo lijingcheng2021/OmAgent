@@ -46,13 +46,8 @@ class ReactProWorkflow(ConductorWorkflow):
         self.loop_task = DoWhileTask(
             task_ref_name='react_pro_loop',
             tasks=[self.think_task, self.action_task, self.wiki_search_task],
-            termination_condition=f'''
-                if (($.action.is_final == true) || ($.think.step_number > $.think.max_steps)) {{
-                    false;  // Stop loop if it's a Finish action or exceeded max turns
-                }} else {{
-                    true;   // Continue loop otherwise
-                }}
-            '''
+            #(($.action.is_final == true) || ($.think.step_number > $.think.max_steps))
+            termination_condition='$.action[is_final] == true'
         )
         
         # Configure output task
@@ -60,8 +55,7 @@ class ReactProWorkflow(ConductorWorkflow):
             task_def_name=ReactOutput,
             task_reference_name='react_output',
             inputs={
-                'action_output': '${action.output}',
-                'workflow_id': '${workflow.workflowId}'
+                'action_output': '${action.output}'
             }
         )
         

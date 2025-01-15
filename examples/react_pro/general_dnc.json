@@ -1,0 +1,108 @@
+{
+    "name": "general_dnc",
+    "tasks": [
+        {
+            "name": "SimpleInput",
+            "taskReferenceName": "input_interface",
+            "inputParameters": {},
+            "type": "SIMPLE",
+            "taskDefinition": {}
+        },
+        {
+            "name": "ConstructDncPayload",
+            "taskReferenceName": "construct_dnc_payload",
+            "inputParameters": {
+                "query": "${input_interface.output.query}"
+            },
+            "type": "SIMPLE",
+            "taskDefinition": {}
+        },
+        {
+            "name": "dncloop_task",
+            "taskReferenceName": "dncloop_task",
+            "inputParameters": {},
+            "type": "DO_WHILE",
+            "taskDefinition": {},
+            "loopCondition": " if ( $.task_exit_monitor['exit_flag'] == true) { false; } else { true; }",
+            "loopOver": [
+                {
+                    "name": "StructureUpdate",
+                    "taskReferenceName": "structure_update",
+                    "inputParameters": {
+                        "dnc_structure": "${construct_dnc_payload.output.dnc_structure}"
+                    },
+                    "type": "SIMPLE"
+                },
+                {
+                    "name": "TaskConqueror",
+                    "taskReferenceName": "task_conqueror",
+                    "inputParameters": {
+                        "dnc_structure": "${structure_update.output.dnc_structure}",
+                        "last_output": "${structure_update.output.last_output}"
+                    },
+                    "type": "SIMPLE"
+                },
+                {
+                    "name": "switch_task",
+                    "taskReferenceName": "switch_task",
+                    "inputParameters": {
+                        "switchCaseValue": "${task_conqueror.output.switch_case_value}"
+                    },
+                    "type": "SWITCH",
+                    "decisionCases": {
+                        "complex": [
+                            {
+                                "name": "TaskDivider",
+                                "taskReferenceName": "task_divider",
+                                "inputParameters": {
+                                    "dnc_structure": "${task_conqueror.output.dnc_structure}",
+                                    "last_output": "${task_conqueror.output.last_output}"
+                                },
+                                "type": "SIMPLE"
+                            }
+                        ],
+                        "failed": [
+                            {
+                                "name": "TaskRescue",
+                                "taskReferenceName": "task_rescue",
+                                "inputParameters": {
+                                    "dnc_structure": "${task_conqueror.output.dnc_structure}",
+                                    "last_output": "${task_conqueror.output.last_output}"
+                                },
+                                "type": "SIMPLE"
+                            }
+                        ]
+                    },
+                    "defaultCase": [],
+                    "evaluatorType": "value-param",
+                    "expression": "switchCaseValue"
+                },
+                {
+                    "name": "TaskExitMonitor",
+                    "taskReferenceName": "task_exit_monitor",
+                    "inputParameters": {},
+                    "type": "SIMPLE"
+                }
+            ]
+        },
+        {
+            "name": "Conclude",
+            "taskReferenceName": "task_conclude",
+            "inputParameters": {
+                "dnc_structure": "${task_exit_monitor.output.dnc_structure}",
+                "last_output": "${task_exit_monitor.output.last_output}"
+            },
+            "type": "SIMPLE",
+            "taskDefinition": {}
+        }
+    ],
+    "inputParameters": [],
+    "outputParameters": {},
+    "failureWorkflow": "",
+    "schemaVersion": 2,
+    "workflowStatusListenerEnabled": false,
+    "ownerEmail": "default@omagent.ai",
+    "timeoutSeconds": 60,
+    "variables": {},
+    "inputTemplate": {}
+}
