@@ -47,7 +47,7 @@ def check_id_alignment(react_file, test_file):
     return mismatches, null_entries, react_count, test_count, valid_count, null_count, missing_questions
 
 if __name__ == "__main__":
-    react_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_gpt4o_pro_promptv1_merged.json"
+    react_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_doubao_pro_promptv1_merged.json"
     test_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_test_processed.jsonl"
     
     mismatches, null_entries, react_count, test_count, valid_count, null_count, missing_questions = check_id_alignment(react_file, test_file)

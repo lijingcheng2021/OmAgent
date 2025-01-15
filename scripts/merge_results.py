@@ -39,8 +39,8 @@ def merge_result_files(input_dir, output_file):
 
 if __name__ == "__main__":
     # 设置输入输出路径
-    input_dir = "/home/li_jingcheng/项目/OmAgent/data/aqua_gpt4o_pro_promptv1"
-    output_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_gpt4o_pro_promptv1_merged.json"
+    input_dir = "/home/li_jingcheng/项目/OmAgent/data/aqua_doubao_pro_promptv1"
+    output_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_doubao_pro_promptv1_merged.json"
     
     # 执行合并
     merge_result_files(input_dir, output_file) 

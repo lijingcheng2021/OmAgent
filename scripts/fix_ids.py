@@ -87,9 +87,9 @@ def fix_missing_data(react_file, test_file, output_file):
     return fixed_ids, fixed_bodies, fixed_outputs, total_count
 
 if __name__ == "__main__":
-    react_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_gpt4o_pro_promptv1_merged.json"
+    react_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_doubao_pro_promptv1_merged.json"
     test_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_test_processed.jsonl"
-    output_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_gpt4o_pro_promptv1_merged_finish.json"
+    output_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_doubao_pro_promptv1_merged_finish.json"
     
     fixed_ids, fixed_bodies, fixed_outputs, total_count = fix_missing_data(react_file, test_file, output_file)
     print(f"Total items processed: {total_count}")

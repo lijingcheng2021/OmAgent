@@ -2,7 +2,9 @@
 import os
 os.environ['HTTP_PROXY'] = 'http://10.8.21.200:47890'
 os.environ['HTTPS_PROXY'] = 'http://10.8.21.200:47890'
-
+os.environ['custom_openai_key'] = "c549be1a-2cba-40d7-a30b-39622789f190"
+#os.environ['custom_openai_endpoint'] = "https://ark.cn-beijing.volces.com/api/v3"
+os.environ['custom_openai_endpoint'] = "http://140.207.201.47:2578/v1"
 from omagent_core.utils.container import container
 from omagent_core.engine.workflow.conductor_workflow import ConductorWorkflow
 from pathlib import Path

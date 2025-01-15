@@ -1,0 +1,16 @@
+- name: Think
+  llm: ${sub|text_res}
+  output_parser:
+    name: StrParser
+  max_steps: 10
+  example: |
+    ''
+
+- name: Action
+  llm: ${sub|text_res}
+  output_parser:
+    name: StrParser
+
+- name: WikiSearch
+
+- name: ReactOutput

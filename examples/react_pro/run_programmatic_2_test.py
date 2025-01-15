@@ -7,6 +7,7 @@ from functools import partial
 os.environ['HTTP_PROXY'] = 'http://10.8.21.200:47890'
 os.environ['HTTPS_PROXY'] = 'http://10.8.21.200:47890'
 
+
 from omagent_core.utils.container import container
 from omagent_core.engine.workflow.conductor_workflow import ConductorWorkflow
 from pathlib import Path
@@ -79,10 +80,10 @@ def process_results(results, dataset_name="aqua"):
 
 # 设置参数
 input_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_test_processed.jsonl"
-num_splits = 100  # 设置要切分的份数
+num_splits = 20  # 设置要切分的份数
 
 # 创建输出目录
-output_dir = "/home/li_jingcheng/项目/OmAgent/data/aqua_gpt4o_pro_promptv1"
+output_dir = "/home/li_jingcheng/项目/OmAgent/data/aqua_doubao_pro_promptv1"
 os.makedirs(output_dir, exist_ok=True)
 
 # 读取并切分输入数据
@@ -112,7 +113,7 @@ for j in range(10):
                 continue
 
             # 检查已处理的文件
-            output_file = os.path.join(output_dir, f"aqua_gpt4o_pro_promptv1_part{i}.json")
+            output_file = os.path.join(output_dir, f"part{i}.json")
             if os.path.exists(output_file):
                 with open(output_file, 'r', encoding='utf-8') as f:
                     formatted_results = json.load(f)

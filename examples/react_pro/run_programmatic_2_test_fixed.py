@@ -6,6 +6,8 @@ from functools import partial
 # 设置代理环境变量
 os.environ['HTTP_PROXY'] = 'http://10.8.21.200:47890'
 os.environ['HTTPS_PROXY'] = 'http://10.8.21.200:47890'
+os.environ['custom_openai_key'] = "c549be1a-2cba-40d7-a30b-39622789f190"
+os.environ['custom_openai_endpoint'] = "https://ark.cn-beijing.volces.com/api/v3"
 
 from omagent_core.utils.container import container
 from omagent_core.engine.workflow.conductor_workflow import ConductorWorkflow
@@ -150,24 +152,8 @@ programmatic_client = ProgrammaticClient(
 # 准备输入数据
 workflow_input_list = [
   {
-    "query": "In a bag of red and green sweets, the ratio of red sweets to green sweets is 3:4. If the bag contains 120 green sweets, how many red sweets are there? Answer Choices:\n(A) 90 (B) 80 (C) 95 (D) 100 (E) 85",
+    "query": "毛泽东出生日期",
     "id": "101"
-  },
-  {
-    "query": "A club consists of members whose ages are in A.P. The common difference being 3 months. If the youngest member of the club is just 7 years old and the sum of the ages of all the members is 250, then number of members in the club are : Answer Choices:\n(A) 18 (B) 20 (C) 25 (D) 26 (E) 27",
-    "id": "102"
-  },
-  {
-    "query": "A rope 20 meters long is cut into two pieces. If the length of one piece of rope is 3 meters shorter than the length of the other, what is the length, in meters, of the longer piece of rope? Answer Choices:\n(A) 7.5 (B) 8.9 (C) 9.9 (D) 11.5 (E) 11.7",
-    "id": "175"
-  },
-  {
-    "query": "Jerry purchased a 1-year $5,000 bond that paid an annual interest rate of 12% compounded every six months. How much interest had this bond accrued at maturity? Answer Choices:\n(A) $5102 (B) $618 (C) $216 (D) $202 (E) $200",
-    "id": "176"
-  },
-  {
-    "query": "Decipher the following multiplication table:\nM A D\nB E\n-------------\nM A D\nR A E\n-------------\nA M I D Answer Choices:\n(A) 9 2 0 0 (B) 9 2 0 9 (C) 9 2 0 1 (D) 9 2 0 7 (E) 9 2 2 2",
-    "id": "177"
   }
 ]
 print(f"Processing {len(workflow_input_list)} queries in this split...")
