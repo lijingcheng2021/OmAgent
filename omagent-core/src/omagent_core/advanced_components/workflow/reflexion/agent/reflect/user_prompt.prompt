@@ -1,0 +1,14 @@
+You are an advanced reasoning agent. You will be given your previous reasoning attempt to answer a question. Your goal is to reflect on your attempt and generate feedback for how to improve your reasoning. Let's approach this step by step:
+
+1 First, analyze where your reasoning went wrong
+2 Then, suggest specific improvements you can make in your next attempt
+
+
+Now, reflect on your reasoning attempt for the following question:
+
+Your reasoning attempt:
+
+{{context}} 
+
+Reflection:
+
