@@ -6,8 +6,25 @@ from functools import partial
 # 设置代理环境变量
 os.environ['HTTP_PROXY'] = 'http://10.8.21.200:47890'
 os.environ['HTTPS_PROXY'] = 'http://10.8.21.200:47890'
-os.environ['custom_openai_key'] = "c549be1a-2cba-40d7-a30b-39622789f190"
-os.environ['custom_openai_endpoint'] = "https://ark.cn-beijing.volces.com/api/v3"
+os.environ['custom_openai_key'] ="sk-4zr6uGzVbNfIiq7U513aCc94Af614792938cE9AdB7D0E295" #"c549be1a-2cba-40d7-a30b-39622789f190"
+os.environ['custom_openai_endpoint'] = "http://121.52.244.250:3000/v1"#"https://ark.cn-beijing.volces.com/api/v3"#"http://121.52.244.250:3000/v1"#"https://ark.cn-beijing.volces.com/api/v3"
+os.environ['model_id'] = "qwen2.5-72b-instruct"
+
+# 添加新的环境变量
+os.environ['container_config'] = 'container_200.yaml'  # 容器配置文件路径
+os.environ['workflow_config'] = 'configs_test'      # 工作流配置目录路径
+output_file = os.path.join('/home/li_jingcheng/项目/dev/OmAgent/data', f"aqua_doubao_pro_promptv1_testv2_merged_fixed.json")
+
+
+# 准备输入数据
+workflow_input_list = [
+  {
+    "query": "What is 60% of 30% of 1400 grams? Answer Choices:\n(A) 450 gms (B) 100 gms (C) 252 gms (D) 240 gms (E) None of these",
+    "id": "204"
+  }
+]
+
+
 
 from omagent_core.utils.container import container
 from omagent_core.engine.workflow.conductor_workflow import ConductorWorkflow
@@ -111,7 +128,7 @@ def timeout_handler(signum, frame):
 
 
 # 检查已处理的文件
-output_file = os.path.join('/home/li_jingcheng/项目/OmAgent/data', f"aqua_gpt4o_pro_promptv1_merged_fixed.json")
+
 
 logging.init_logger("omagent", "omagent", level="INFO")
 
@@ -123,7 +140,7 @@ registry.import_module(CURRENT_PATH.joinpath('agent'))
 
 # 加载 container 配置从 YAML 文件
 container.register_stm("RedisSTM")
-container.from_config(CURRENT_PATH.joinpath('container.yaml'))
+container.from_config(CURRENT_PATH.joinpath(os.environ['container_config']))
 
 # 初始化工作流
 workflow = ConductorWorkflow(name='react_pro_example')
@@ -139,7 +156,7 @@ react_workflow.set_input(
 workflow >> react_workflow 
 
 # 初始化 programmatic client
-config_path = CURRENT_PATH.joinpath('configs')
+config_path = CURRENT_PATH.joinpath(os.environ['workflow_config'])
 
 # 注册工作流
 workflow.register(overwrite=True)
@@ -149,13 +166,7 @@ programmatic_client = ProgrammaticClient(
     workers=[]
 )
 
-# 准备输入数据
-workflow_input_list = [
-  {
-    "query": "毛泽东出生日期",
-    "id": "101"
-  }
-]
+
 print(f"Processing {len(workflow_input_list)} queries in this split...")
 
 # 设置超时信号处理

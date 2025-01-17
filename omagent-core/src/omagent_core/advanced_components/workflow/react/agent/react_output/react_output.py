@@ -1,10 +1,9 @@
 from omagent_core.engine.worker.base import BaseWorker
 from omagent_core.utils.registry import registry
-
+from pydantic import Field
 @registry.register_worker()
 class ReactOutput(BaseWorker):
     """Simple worker that passes through the final action output for React workflow"""
-    
     def _run(self, action_output: str, workflow_id: str, *args, **kwargs):
         """Simply return the action output with any necessary state"""
         

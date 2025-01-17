@@ -3,9 +3,27 @@ import math
 import time
 import signal
 from functools import partial
+
 # 设置代理环境变量
 os.environ['HTTP_PROXY'] = 'http://10.8.21.200:47890'
 os.environ['HTTPS_PROXY'] = 'http://10.8.21.200:47890'
+os.environ['custom_openai_key'] = "sk-4zr6uGzVbNfIiq7U513aCc94Af614792938cE9AdB7D0E295" #"c549be1a-2cba-40d7-a30b-39622789f190" #"sk-4zr6uGzVbNfIiq7U513aCc94Af614792938cE9AdB7D0E295" #"c549be1a-2cba-40d7-a30b-39622789f190"
+os.environ['custom_openai_endpoint'] = "http://121.52.244.250:3000/v1" #"http://121.52.244.250:3000/v1"#"http://121.52.244.250:3000/v1"#"https://ark.cn-beijing.volces.com/api/v3"
+
+os.environ['model_id'] = "meta-llama/Llama-3.3-70B-Instruct"
+
+# 添加新的环境变量
+os.environ['container_config'] = 'container_41.yaml'  # 容器配置文件路径
+os.environ['workflow_config'] = 'configs_aqua'      # 工作流配置目录路径
+
+# 设置参数
+input_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_test_processed.jsonl"
+num_splits = 20  # 设置要切分的份数
+
+# 创建输出目录
+output_dir = "/home/li_jingcheng/项目/dev/OmAgent/data/aqua_Llama-3.3-70B_pro_promptv1_testv0"
+
+
 
 
 from omagent_core.utils.container import container
@@ -78,12 +96,6 @@ def process_results(results, dataset_name="aqua"):
 
 
 
-# 设置参数
-input_file = "/home/li_jingcheng/项目/OmAgent/data/aqua_test_processed.jsonl"
-num_splits = 20  # 设置要切分的份数
-
-# 创建输出目录
-output_dir = "/home/li_jingcheng/项目/OmAgent/data/aqua_doubao_pro_promptv1"
 os.makedirs(output_dir, exist_ok=True)
 
 # 读取并切分输入数据
@@ -131,7 +143,7 @@ for j in range(10):
 
             # 加载 container 配置从 YAML 文件
             container.register_stm("RedisSTM")
-            container.from_config(CURRENT_PATH.joinpath('container.yaml'))
+            container.from_config(CURRENT_PATH.joinpath(os.environ['container_config']))
 
             # 初始化工作流
             workflow = ConductorWorkflow(name='react_pro_example')
@@ -147,7 +159,7 @@ for j in range(10):
             workflow >> react_workflow 
 
             # 初始化 programmatic client
-            config_path = CURRENT_PATH.joinpath('configs')
+            config_path = CURRENT_PATH.joinpath(os.environ['workflow_config'])
 
             # 注册工作流
             workflow.register(overwrite=True)
@@ -161,6 +173,12 @@ for j in range(10):
             workflow_input_list = [
                 {"query": text[0], "id": text[1]} for text in split_data
             ]
+            # workflow_input_list = [
+            #             {
+            #                 "query": "法国的首都是哪里",
+            #                 "id": "101"
+            #             }
+            #             ]
             
             print(f"Processing {len(workflow_input_list)} queries in this split...")
             

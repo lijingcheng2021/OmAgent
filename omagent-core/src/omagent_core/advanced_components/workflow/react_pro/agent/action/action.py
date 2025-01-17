@@ -11,7 +11,6 @@ CURRENT_PATH = Path(__file__).parents[0]
 @registry.register_worker()
 class Action(BaseLLMBackend, BaseWorker):
     """Action worker that determines the next step in ReAct chain"""
-    
     prompts: List[PromptTemplate] = Field(
         default=[
             PromptTemplate.from_file(
@@ -65,7 +64,7 @@ class Action(BaseLLMBackend, BaseWorker):
             state.update({'token_usage': token_usage})
         
         # Process non-streaming response
-        output = response['choices'][0]['message']['content']
+        output = response['choices'][0]['message']['content']#.split("\n")[0]
         
         # Check if it's a Finish action
         is_final = 'Finish[' in output

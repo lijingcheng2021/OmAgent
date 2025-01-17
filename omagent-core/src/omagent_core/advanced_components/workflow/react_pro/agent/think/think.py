@@ -59,6 +59,8 @@ class Think(BaseLLMBackend, BaseWorker):
         
         # Get response
         response = self.simple_infer(query=query, context=full_prompt)
+        #response = self.simple_infer(query=query, context=full_prompt,stop=["\n"])
+
 
         # Get model call parameters
         message = self.prep_prompt([{"question": query}])
@@ -66,7 +68,7 @@ class Think(BaseLLMBackend, BaseWorker):
         state["body"] = body
         
         # Process non-streaming response
-        output = response['choices'][0]['message']['content']
+        output = response['choices'][0]['message']['content']#.split("\n")[0]
         
         # Update token usage
         if 'usage' in response:
