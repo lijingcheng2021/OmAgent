@@ -11,7 +11,7 @@ from pathlib import Path
 from omagent_core.utils.registry import registry
 from omagent_core.clients.devices.lite_version.cli import DefaultClient
 from omagent_core.utils.logger import logging
-from omagent_core.advanced_components.workflow.react_pro.workflow import ReactProWorkflow
+from omagent_core.advanced_components.workflow.react_pro_reflexion.workflow import ReactProReflexionWorkflow
 from omagent_core.engine.worker.base import BaseWorker
 
 @registry.register_worker()
@@ -31,14 +31,14 @@ registry.import_module(CURRENT_PATH.joinpath('agent'))
 container.register_stm("SharedMemSTM")
 
 # Initialize workflow
-workflow = ConductorWorkflow(name='react_pro_lite', lite_version=True)
+workflow = ConductorWorkflow(name='react_pro_reflexion_lite', lite_version=True)
 
 # Configure workflow tasks:
 # 1. Input interface for user interaction
 client_input_task = simple_task(task_def_name=SimpleInput, task_reference_name='input_interface')
 
-# Configure React Pro workflow
-react_workflow = ReactProWorkflow()
+# Configure React Pro Reflexion workflow
+react_workflow = ReactProReflexionWorkflow()
 react_workflow.set_input(
     query=client_input_task.output('query'),
     id=client_input_task.output('id')
